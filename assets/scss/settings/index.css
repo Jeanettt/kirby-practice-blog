@@ -1,0 +1,18 @@
+/* Error: $hue: 0 is not a number.
+ *   ,
+ * 7 | $color-red-light-mode-root:                hsl(#{$hue-red}, 71%, 100%) !default;
+ *   |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   ../lebkov-kirby/assets/scss/settings/colors.scss 7:32  @import
+ *   ../lebkov-kirby/assets/scss/settings/index.scss 1:9    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $hue: 0 is not a number.\a   \2577 \a 7 \2502  $color-red-light-mode-root:                hsl(#{$hue-red}, 71%, 100%) !default;\a   \2502                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   ../lebkov-kirby/assets/scss/settings/colors.scss 7:32  @import\a   ../lebkov-kirby/assets/scss/settings/index.scss 1:9    root stylesheet";
+}

@@ -1,0 +1,13 @@
+.separator {
+	fill: var(--color-base-moderate);
+	max-width: 100%;
+	width: 156px;
+}
+
+.separator--dark-mode {
+	fill: var(--color-base-dark-mode-moderate);
+}
+
+.separator--dark-mode.separator--orange {
+	fill: var(--color-orange-dark-mode-critical);
+}

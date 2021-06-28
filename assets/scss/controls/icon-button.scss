@@ -1,0 +1,52 @@
+.icon-button {
+	display: inline-block;
+	position: relative;
+	width: var(--touch-size);
+	height: var(--touch-size);
+	overflow: hidden;
+
+	&:focus {
+		outline: transparent;
+		box-shadow: 0 0 0 3px var(--color-focus);
+		border-radius: 50%;
+	}
+
+	&:focus:not(:focus-visible) {
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+	&::-moz-focus-inner {
+		border: 0;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		mask-image: url('/assets/images/circle.svg');
+		-webkit-mask-image: url('/assets/images/circle.svg');
+		mask-size: 100% 100%;
+		mask-repeat: no-repeat;
+	}
+}
+
+.icon-button__icon {
+	fill: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 60%;
+	width: 60%;
+	overflow: visible;
+}
+
+.icon-button__label {
+	margin-left: var(--touch-size);
+}

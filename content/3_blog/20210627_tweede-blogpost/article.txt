@@ -35,3 +35,11 @@ Author:
 ----
 
 Tags: bob ross, wollig, aardbei
+
+----
+
+Images:
+
+- >
+  damian-patkowski-t-lfvx-7ivg-unsplash.jpg
+- denys-nevozhai-63znf38gnxk-unsplash.jpg

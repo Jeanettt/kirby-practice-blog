@@ -1,0 +1,45 @@
+.box {
+  display: block;
+  position: relative;
+  padding: var(--spacing-level-3);
+  scroll-margin-top: var(--spacing-level-3);
+}
+.box::before {
+  content: "";
+  display: block;
+  background-color: var(--color-base-low);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0% calc(var(--spacing-level-3) * 0.5), calc(100% - var(--spacing-level-3) * 0.25) 0, 100% calc(100% - var(--spacing-level-3) * 0.25), calc(var(--spacing-level-3) * 0.5) 100%);
+  clip-path: polygon(0% calc(var(--spacing-level-3) * 0.5), calc(100% - var(--spacing-level-3) * 0.25) 0, 100% calc(100% - var(--spacing-level-3) * 0.25), calc(var(--spacing-level-3) * 0.5) 100%);
+}
+
+.box--dark-mode::before {
+  background-color: var(--color-base-dark-mode-root);
+}
+
+.box--red::before {
+  background-color: var(--color-red-low);
+}
+
+.box--orange::before {
+  background-color: var(--color-orange-low);
+}
+
+.box--green::before {
+  background-color: var(--color-green-low);
+}
+
+.box--blue::before {
+  background-color: var(--color-blue-low);
+}
+
+.box--magenta::before {
+  background-color: var(--color-magenta-low);
+}
+
+/*# sourceMappingURL=box.css.map */

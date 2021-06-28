@@ -1,7 +1,6 @@
-body {
-    color: red;
-
-    h1 {
-        color: blue;
-    }
-}
+@import 'fonts/index';
+@import 'reset/index';
+@import 'settings/index';
+@import 'layouts/index';
+@import 'controls/index';
+@import 'components/index';

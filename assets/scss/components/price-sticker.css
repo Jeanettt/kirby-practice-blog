@@ -1,0 +1,12 @@
+.price-sticker {
+  line-height: var(--line-height-x-small);
+  fill: var(--color-green-light-mode-low);
+  width: 100%;
+}
+
+.price-sticker__price {
+  font: var(--font-h4);
+  fill: var(--color-text-light-mode-high-contrast);
+}
+
+/*# sourceMappingURL=price-sticker.css.map */

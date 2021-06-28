@@ -1,0 +1,148 @@
+.mascot {
+  padding-bottom: 150%;
+  position: relative;
+  font: var(--font-h3);
+  display: flex;
+  justify-content: center;
+  max-width: var(--type-area-width-wide);
+  text-align: center;
+}
+.mascot::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 150%;
+  content: "";
+  display: block;
+  background-image: url("/assets/images/lebkov-mascot-standing.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mascot--small {
+  font: var(--font-h4);
+}
+
+.mascot--facing-left::after {
+  transform: scaleX(-1);
+}
+
+.mascot--speech-balloon-left {
+  padding-bottom: 0;
+  align-items: flex-start;
+}
+.mascot--speech-balloon-left::after {
+  position: static;
+  padding-bottom: calc((38.2% - var(--spacing-level-5)) * 3/2);
+  width: 0;
+  padding-left: calc(38.2% - var(--spacing-level-5));
+  transform: scaleX(-1);
+  margin-left: var(--spacing-level-5);
+  margin-top: var(--spacing-level-4);
+}
+
+.mascot--speech-balloon-right {
+  padding-bottom: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+.mascot--speech-balloon-right::after {
+  order: 1;
+  position: static;
+  padding-bottom: calc((38.2% - var(--spacing-level-5)) * 3/2);
+  width: 0;
+  padding-right: calc(38.2% - var(--spacing-level-5));
+  margin-right: var(--spacing-level-5);
+  margin-top: var(--spacing-level-4);
+  transform: scaleX(1);
+}
+
+.mascot--ok-hand-sign::after {
+  background-image: url("/assets/images/lebkov-mascot-ok-hand-sign.svg");
+}
+
+.mascot--flexed-bicep::after {
+  background-image: url("/assets/images/lebkov-mascot-flexed-bicep.svg");
+}
+
+.mascot--hats-off::after {
+  background-image: url("/assets/images/lebkov-mascot-hats-off.svg");
+}
+
+.mascot--index-pointing-up::after {
+  background-image: url("/assets/images/lebkov-mascot-index-pointing-up.svg");
+}
+
+.mascot--credit-card::after {
+  background-image: url("/assets/images/lebkov-mascot-credit-card.svg");
+}
+
+.mascot__speech-balloon {
+  position: relative;
+  width: 100%;
+  max-width: var(--type-area-width-condensed);
+  display: inline-flex;
+  flex-direction: column;
+  color: var(--color-text-dark-mode-high-contrast);
+  padding-top: var(--spacing-level-4);
+  padding-right: var(--spacing-level-4);
+  padding-bottom: calc(var(--spacing-level-4) + var(--spacing-level-4));
+  padding-left: var(--spacing-level-4);
+  z-index: 1;
+  justify-content: center;
+}
+.mascot__speech-balloon::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background-color: var(--color-base-dark-mode-root);
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0% calc(var(--spacing-level-4) * 0.5), 100% 0%, calc(100% - var(--spacing-level-4) * 0.5) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) calc(100% - var(--spacing-level-4)), 30% 100%, 30% calc(100% - var(--spacing-level-4)), calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4)));
+  clip-path: polygon(0% calc(var(--spacing-level-4) * 0.5), 100% 0%, calc(100% - var(--spacing-level-4) * 0.5) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) calc(100% - var(--spacing-level-4)), 30% 100%, 30% calc(100% - var(--spacing-level-4)), calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4)));
+}
+.mascot--orange-speech-balloon .mascot__speech-balloon {
+  color: var(--color-text-light-mode);
+}
+.mascot--orange-speech-balloon .mascot__speech-balloon::before {
+  background-color: var(--color-orange-light-mode-low);
+}
+.mascot--facing-left .mascot__speech-balloon::before {
+  -webkit-clip-path: polygon(0% calc(var(--spacing-level-4) * 0.5), 100% 0%, calc(100% - var(--spacing-level-4) * 0.5) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) 100%, 30% calc(100% - var(--spacing-level-4)), calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4)));
+  clip-path: polygon(0% calc(var(--spacing-level-4) * 0.5), 100% 0%, calc(100% - var(--spacing-level-4) * 0.5) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) calc(100% - var(--spacing-level-4)), calc(30% + var(--spacing-level-4)) 100%, 30% calc(100% - var(--spacing-level-4)), calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4)));
+}
+.mascot--speech-balloon-left .mascot__speech-balloon {
+  padding-right: calc(var(--spacing-level-4) + var(--spacing-level-4));
+  padding-bottom: var(--spacing-level-4);
+  min-height: calc(var(--spacing-level-4) * 3);
+  min-width: 61.8%;
+  auto: width;
+}
+.mascot--speech-balloon-left .mascot__speech-balloon::before {
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--spacing-level-4) * 1.125) calc(var(--spacing-level-4) * 0.25), calc(100% - var(--spacing-level-4)) calc(var(--spacing-level-4) * 2), 100% calc(var(--spacing-level-4) * 3), calc(100% - var(--spacing-level-4)) calc(var(--spacing-level-4) * 3), calc(100% - var(--spacing-level-4) * 1.125) 100%, calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4) * 0.125));
+  clip-path: polygon(0 0, calc(100% - var(--spacing-level-4) * 1.125) calc(var(--spacing-level-4) * 0.25), calc(100% - var(--spacing-level-4)) calc(var(--spacing-level-4) * 2), 100% calc(var(--spacing-level-4) * 3), calc(100% - var(--spacing-level-4)) calc(var(--spacing-level-4) * 3), calc(100% - var(--spacing-level-4) * 1.125) 100%, calc(var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4) * 0.125));
+}
+.mascot--speech-balloon-right .mascot__speech-balloon {
+  order: 2;
+  padding-left: calc(var(--spacing-level-4) + var(--spacing-level-4));
+  padding-bottom: var(--spacing-level-4);
+  min-height: calc(var(--spacing-level-4) * 3);
+  min-width: 61.8%;
+  auto: width;
+}
+.mascot--speech-balloon-right .mascot__speech-balloon::before {
+  -webkit-clip-path: polygon(calc(var(--spacing-level-4) * 0.875) calc(var(--spacing-level-4) * 0.125), 100% 0, calc(100% - var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4) * 0.125), var(--spacing-level-4) 100%, var(--spacing-level-4) calc(var(--spacing-level-4) * 3), 0% calc(var(--spacing-level-4) * 3), var(--spacing-level-4) calc(var(--spacing-level-4) * 2));
+  clip-path: polygon(calc(var(--spacing-level-4) * 0.875) calc(var(--spacing-level-4) * 0.125), 100% 0, calc(100% - var(--spacing-level-4) * 0.25) calc(100% - var(--spacing-level-4) * 0.125), var(--spacing-level-4) 100%, var(--spacing-level-4) calc(var(--spacing-level-4) * 3), 0% calc(var(--spacing-level-4) * 3), var(--spacing-level-4) calc(var(--spacing-level-4) * 2));
+}
+
+.mascot__actions {
+  margin-top: var(--spacing-level-4);
+  margin-bottom: calc(var(--touch-size) * -0.5 + var(--spacing-level-4) * -0.5);
+}
+
+/*# sourceMappingURL=mascot.css.map */

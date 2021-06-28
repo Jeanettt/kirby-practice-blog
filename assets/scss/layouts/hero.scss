@@ -1,0 +1,219 @@
+$hero-z-index: 0 !default;
+
+.hero {
+	max-width: var(--type-area-width-expanded);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: var(--spacing-level-1);
+	margin-top: var(--spacing-level-6);
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		padding-left: var(--spacing-column-level-1);
+		padding-right: var(--spacing-column-level-1);
+	}
+}
+
+.hero__body {
+	position: relative;
+	display: grid;
+
+	@media screen and (max-width: #{$viewport-regular-max-width}) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"background"
+			"main"
+		;
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"main background"
+		;
+	}
+}
+
+.hero__main {
+	grid-area: main;
+	position: relative;
+	display: grid;
+	grid-template-rows: auto auto;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		padding: var(--spacing-level-2) var(--spacing-column-level-1);
+		grid-template-columns: 1fr 2.5fr;
+		grid-gap: var(--spacing-level-5);
+		grid-template-areas:
+			"mascot header"
+			"text text"
+		;
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		padding: var(--spacing-level-2);
+		margin-top: calc(var(--spacing-level-2) * -2);
+		grid-template-columns: 1fr 3fr;
+		grid-gap: var(--spacing-level-4);
+		grid-template-areas:
+			"mascot header"
+			"mascot text"
+		;
+
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		padding: var(--spacing-level-2);
+		grid-template-columns: 1fr 3fr;
+		grid-gap: var(--spacing-level-4);
+		grid-template-areas:
+			"mascot header"
+			"mascot text"
+		;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: $hero-z-index;
+
+		@media screen and (max-width: #{$viewport-narrow-max-width}) {
+			-webkit-clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 1),
+				100% 0,
+				100% calc(100% - var(--spacing-level-2) * 1),
+				0% 100%
+			);
+			clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 1),
+				100% 0,
+				100% calc(100% - var(--spacing-level-2) * 1),
+				0% 100%
+			);
+		}
+
+		@media screen and (min-width: #{$viewport-regular-min-width}) {
+			-webkit-clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.75),
+				calc(100% - var(--spacing-level-2) * 0.25) 0,
+				100% calc(100% - var(--spacing-level-2) * 0.25),
+				calc(var(--spacing-level-2) * 0.5) 100%
+			);
+			clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.75),
+				calc(100% - var(--spacing-level-2) * 0.25) 0,
+				100% calc(100% - var(--spacing-level-2) * 0.25),
+				calc(var(--spacing-level-2) * 0.5) 100%
+			);
+		}
+	}
+}
+
+.hero__mascot {
+	grid-area: mascot;
+	z-index: $hero-z-index + 2;
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		margin-top: calc(var(--spacing-level-2) * -1);
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		margin-top: calc(var(--spacing-level-2) * -1);
+	}
+
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		margin-top: calc(var(--spacing-level-2) * -1);
+	}
+}
+
+
+.hero__header {
+	grid-area: header;
+	text-shadow: 1px 2px rgba(0, 0, 0, 1);
+	z-index: $hero-z-index + 2;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		align-self: center;
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		align-self: end;
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		align-self: end;
+		margin-right: calc(var(--spacing-level-2) * -2);
+	}
+}
+
+.hero__text {
+	grid-area: text;
+	z-index: $hero-z-index + 2;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		margin-right: calc(var(--spacing-level-2) * 1.5);
+	}
+}
+
+.hero__background {
+	display: block;
+	overflow: hidden;
+	grid-area: background;
+	position: relative;
+	background-color: var(--color-base-moderate);
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		padding-bottom: 100% * 1/2.4;
+		z-index: $hero-z-index - 1;
+		margin-bottom: calc(var(--spacing-level-2) * -1);
+		-webkit-clip-path: polygon(
+			0 0,
+			100% 2%,
+			100% 100%,
+			0% 100%
+		);
+		clip-path: polygon(
+			0 0,
+			100% 2%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		padding-bottom: 100% * 1/2.4;
+		z-index: $hero-z-index - 1;
+		-webkit-clip-path: polygon(0 0, 100% 2%, 94% 98%, 3% 100%);
+		clip-path: polygon(0 0, 100% 2%, 94% 98%, 3% 100%);
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		-webkit-clip-path: polygon(0 0, 96% 4%, 100% 98%, 4% 100%);
+		clip-path: polygon(0 0, 96% 4%, 100% 98%, 4% 100%);
+		z-index: $hero-z-index + 1;
+		margin-top: calc(var(--spacing-level-2) * 1);
+		margin-bottom: calc(var(--spacing-level-2) * 1);
+		margin-left: calc(var(--spacing-level-2) * -2);
+	}
+}
+
+.hero__background-image {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}

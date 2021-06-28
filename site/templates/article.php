@@ -1,13 +1,14 @@
 <?php snippet('header') ?>
 
-<section class="content article">
+<section class="simple-layout">
     <article>
-        <h1><?= $page->title()->html() ?></h1>
-        <?= $page->intro()->kirbytext() ?>
-        <?= $page->text()->kirbytext() ?>
-
-        <a href="<?= url('blog') ?>">Back...</a>
-
+        <div class="rich-text">
+            <h1><?= $page->title()->html() ?></h1>
+            <?= $page->intro()->kirbytext() ?>
+            <?= $page->text()->kirbytext() ?>
+    
+            <a href="<?= url('blog') ?>">Back...</a>
+        </div>
     </article>
 </section>
 

@@ -7,11 +7,17 @@ $items = $pages->listed();
 if($items->isNotEmpty()):
 
 ?>
-<nav>
-  <ul>
-    <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
+<nav class="menu-bar"
+  aria-label="<?= t('system.primary-menu-aria-label') ?>"
+>
+  <div class="menu-bar__items">
+    <?php foreach ($items as $item) : ?>
+    <a class="menu-bar__item <?php e($item->isOpen(), 'menu-bar__item--active') ?>"
+      href="<?= $item->url() ?>"
+    >
+      <?= $item->title()->html() ?>
+    </a>
     <?php endforeach ?>
-  </ul>
+  </div>
 </nav>
 <?php endif ?>

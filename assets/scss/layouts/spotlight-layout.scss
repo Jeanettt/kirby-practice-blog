@@ -1,0 +1,242 @@
+$spotlight-layout-z-index: 0 !default;
+
+.spotlight-layout {
+	position: relative;
+	padding-right: var(--spacing-column-level-1);
+	padding-left: var(--spacing-column-level-1);
+	margin-top: var(--spacing-level-1);
+	margin-bottom: var(--spacing-level-1);
+	scroll-margin-top: var(--spacing-level-1);
+
+	&:first-child {
+		margin-top: var(--spacing-level-2);
+	}
+}
+
+.spotlight-layout__body {
+	position: relative;
+	display: grid;
+	max-width: var(--type-area-width-extended);
+	margin-left: auto;
+	margin-right: auto;
+	grid-gap: var(--spacing-level-2);
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+
+		&::before {
+			position: absolute;
+			z-index: $spotlight-layout-z-index - 1;
+			display: block;
+			content: '';
+			left: 25%;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background-color: var(--color-base-dark-mode-root);
+			-webkit-clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.25),
+				90% 0%,
+				calc(100% - var(--spacing-level-2) * 0.25) calc(var(--spacing-level-2) * 0.25),
+				100% 100%,
+				calc(var(--spacing-level-2) * 0.25) calc(100% - var(--spacing-level-2) * 0.25)
+			);
+			clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.25),
+				90% 0%,
+				calc(100% - var(--spacing-level-2) * 0.25) calc(var(--spacing-level-2) * 0.25),
+				100% 100%,
+				calc(var(--spacing-level-2) * 0.25) calc(100% - var(--spacing-level-2) * 0.25)
+			);
+		}
+	}
+
+	@media screen and (min-width: #{$viewport-wide-min-width}) {
+		grid-template-columns: 3fr 2fr;
+		align-items: center;
+
+		&::before {
+			position: absolute;
+			z-index: $spotlight-layout-z-index - 2;
+			display: block;
+			content: '';
+			left: 25%;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background-color: var(--color-base-dark-mode-root);
+			-webkit-clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.25),
+				90% 0%,
+				calc(100% - var(--spacing-level-2) * 0.25) calc(var(--spacing-level-2) * 0.25),
+				100% 100%,
+				calc(var(--spacing-level-2) * 0.25) calc(100% - var(--spacing-level-2) * 0.25)
+			);
+			clip-path: polygon(
+				0% calc(var(--spacing-level-2) * 0.25),
+				90% 0%,
+				calc(100% - var(--spacing-level-2) * 0.25) calc(var(--spacing-level-2) * 0.25),
+				100% 100%,
+				calc(var(--spacing-level-2) * 0.25) calc(100% - var(--spacing-level-2) * 0.25)
+			);
+		}
+	}
+}
+
+.spotlight-layout__media {
+	position: relative;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		&::before {
+			position: absolute;
+			display: block;
+			content: '';
+			background-color: var(--color-base-dark-mode-root);
+			left: calc(var(--spacing-column-level-1) * -1);
+			right: calc(var(--spacing-column-level-1) * -1);
+			bottom: -1px;
+			top: 33%;
+			z-index: $spotlight-layout-z-index - 1;
+			-webkit-clip-path: polygon(
+				0% calc(var(--spacing-level-1) * 0.25),
+				100% 0%,
+				100% 100%,
+				0 100%
+			);
+			clip-path: polygon(
+				0% calc(var(--spacing-level-1) * 0.25),
+				100% 0%,
+				100% 100%,
+				0 100%
+			);
+		}
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		padding-top: var(--spacing-level-2);
+		padding-bottom: var(--spacing-level-2);
+	}
+}
+
+.spotlight-layout__media-sticker {
+	position: absolute;
+	z-index: $spotlight-layout-z-index + 1;
+	width: 20%;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		right: 3%;
+		top: -3%;
+	}
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		right: 20%;
+		top: -5%;
+	}
+}
+
+.spotlight-layout__image {
+	width: 100%;
+}
+
+.spotlight-layout__main {
+	position: relative;
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		padding-bottom: var(--spacing-level-1);
+
+		&::before {
+			position: absolute;
+			display: block;
+			content: '';
+			background-color: var(--color-base-dark-mode-root);
+			top: calc(var(--spacing-level-2) * -1 - 1px);
+			left: calc(var(--spacing-column-level-1) * -1);
+			right: calc(var(--spacing-column-level-1) * -1);
+			bottom: 0;
+			z-index: $spotlight-layout-z-index - 1;
+			-webkit-clip-path: polygon(
+				0% 0%,
+				100% 0%,
+				100% calc(100% - var(--spacing-level-1) * 0.5),
+				0 100%
+			);
+			clip-path: polygon(
+				0% 0%,
+				100% 0%,
+				100% calc(100% - var(--spacing-level-1) * 0.5),
+				0 100%
+			);
+		}
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		padding-top: var(--spacing-level-2);
+		padding-right: var(--spacing-level-2);
+		padding-bottom: var(--spacing-level-2);
+	}
+}
+
+.spotlight-layout__header {
+	margin-bottom: var(--spacing-level-4);
+	max-width: var(--type-area-width-narrow);
+}
+
+.spotlight-layout__text {
+	position: relative;
+	padding-top: var(--spacing-level-4);
+	padding-right: var(--spacing-level-4);
+	padding-bottom: calc(var(--spacing-level-4) + var(--touch-size) * 0.5);
+	padding-left: var(--spacing-level-4);
+	font-family: var(--font-family-lunchbox);
+	line-height: var(--line-height-small);
+	font-size: var(--font-size-large);
+	font-weight: bold;
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		max-width: var(--type-area-width-condensed);
+	}
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: $spotlight-layout-z-index - 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-base-root);
+		-webkit-clip-path: polygon(
+			calc(var(--spacing-level-4) * 0.25) calc(var(--spacing-level-4) * 0.125),
+			calc(100% - var(--spacing-level-4) * 0.25) 0,
+			100% 100%,
+			0 calc(100% - var(--spacing-level-4) * 0.5)
+		);
+		clip-path: polygon(
+			calc(var(--spacing-level-4) * 0.25) calc(var(--spacing-level-4) * 0.125),
+			calc(100% - var(--spacing-level-4) * 0.25) 0,
+			100% 100%,
+			0 calc(100% - var(--spacing-level-4) * 0.5)
+		);
+	}
+}
+
+.spotlight-layout__text-arrow {
+	position: absolute;
+	fill: var(--color-base-root);
+
+	@media screen and (max-width: #{$viewport-narrow-max-width}) {
+		display: none;
+	}
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		width: calc(var(--spacing-level-2) * 0.5);
+		left: calc(var(--spacing-level-2) * -0.5);
+		top: calc(var(--spacing-level-4) * -0.5);
+		transform: scaleX(-1) rotate(250deg);
+	}
+}
+
+.spotlight-layout__actions {
+	margin-top: calc(var(--touch-size) * -0.5);
+	margin-left: var(--spacing-level-4);
+}

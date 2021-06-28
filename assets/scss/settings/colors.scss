@@ -1,0 +1,811 @@
+$hue-red:								0 !default;
+$hue-orange:							18 !default;
+$hue-green:								157 !default;
+$hue-blue:								260 !default;
+$hue-magenta:							339 !default;
+
+$color-red-light-mode-root:				hsl(#{$hue-red}, 71%, 100%) !default;
+$color-red-light-mode-ground:			hsl(#{$hue-red}, 71%, 100%) !default;
+$color-red-light-mode-low:				hsl(#{$hue-red}, 71%, 88%) !default;
+$color-red-light-mode-moderate:			hsl(#{$hue-red}, 71%, 78%) !default;
+$color-red-light-mode-high:				hsl(#{$hue-red}, 71%, 67%) !default;
+$color-red-light-mode-important:		hsl(#{$hue-red}, 71%, 47%) !default;
+$color-red-light-mode-critical:			hsl(#{$hue-red}, 71%, 39%) !default;
+$color-red-light-mode:					$color-red-light-mode-high !default;
+$color-red-dark-mode-root:				hsl(#{$hue-red}, 71%, 1%) !default;
+$color-red-dark-mode-ground:			hsl(#{$hue-red}, 71%, 16%) !default;
+$color-red-dark-mode-low:				hsl(#{$hue-red}, 71%, 10%) !default;
+$color-red-dark-mode-moderate:			hsl(#{$hue-red}, 71%, 30%) !default;
+$color-red-dark-mode-high:				hsl(#{$hue-red}, 71%, 48%) !default;
+$color-red-dark-mode-important:			hsl(#{$hue-red}, 71%, 63%) !default;
+$color-red-dark-mode-critical:			hsl(#{$hue-red}, 71%, 76%) !default;
+$color-red-dark-mode:					$color-red-dark-mode-important !default;
+$color-red-root:						$color-red-light-mode-root !default;
+$color-red-ground:						$color-red-light-mode-ground !default;
+$color-red-low:							$color-red-light-mode-low !default;
+$color-red-moderate:					$color-red-light-mode-moderate !default;
+$color-red-high:						$color-red-light-mode-high !default;
+$color-red-important:					$color-red-light-mode-important !default;
+$color-red-critical:					$color-red-light-mode-critical !default;
+$color-red:								$color-red-light-mode !default;
+
+$color-orange-light-mode-root:			hsl(#{$hue-orange}, 84%, 100%) !default;
+$color-orange-light-mode-ground:		hsl(#{$hue-orange}, 84%, 100%) !default;
+$color-orange-light-mode-low:			hsl(#{$hue-orange}, 84%, 83%) !default;
+$color-orange-light-mode-moderate:		hsl(#{$hue-orange}, 84%, 78%) !default;
+$color-orange-light-mode-high:			hsl(#{$hue-orange}, 84%, 57%) !default;
+$color-orange-light-mode-important:		hsl(#{$hue-orange}, 84%, 43%) !default;
+$color-orange-light-mode-critical:		hsl(#{$hue-orange}, 84%, 32%) !default;
+$color-orange-light-mode:				$color-orange-light-mode-high !default;
+$color-orange-dark-mode-root:			hsl(#{$hue-orange}, 84%, 1%) !default;
+$color-orange-dark-mode-ground:			hsl(#{$hue-orange}, 84%, 16%) !default;
+$color-orange-dark-mode-low:			hsl(#{$hue-orange}, 84%, 10%) !default;
+$color-orange-dark-mode-moderate:		hsl(#{$hue-orange}, 84%, 30%) !default;
+$color-orange-dark-mode-high:			hsl(#{$hue-orange}, 84%, 43%) !default;
+$color-orange-dark-mode-important:		hsl(#{$hue-orange}, 84%, 55%) !default;
+$color-orange-dark-mode-critical:		hsl(#{$hue-orange}, 84%, 72%) !default;
+$color-orange-dark-mode:				$color-orange-dark-mode-important !default;
+$color-orange-root:						$color-orange-light-mode-root !default;
+$color-orange-ground:					$color-orange-light-mode-ground !default;
+$color-orange-low:						$color-orange-light-mode-low !default;
+$color-orange-moderate:					$color-orange-light-mode-moderate !default;
+$color-orange-high:						$color-orange-light-mode-high !default;
+$color-orange-important:				$color-orange-light-mode-important !default;
+$color-orange-critical:					$color-orange-light-mode-critical !default;
+$color-orange:							$color-orange-light-mode !default;
+
+$color-green-light-mode-root:			hsl(#{$hue-green}, 32%, 100%) !default;
+$color-green-light-mode-ground:			hsl(#{$hue-green}, 32%, 100%) !default;
+$color-green-light-mode-low:			hsl(#{$hue-green}, 32%, 82%) !default;
+$color-green-light-mode-moderate:		hsl(#{$hue-green}, 32%, 67%) !default;
+$color-green-light-mode-high:			hsl(#{$hue-green}, 32%, 49%) !default;
+$color-green-light-mode-important:		hsl(#{$hue-green}, 32%, 39%) !default;
+$color-green-light-mode-critical:		hsl(#{$hue-green}, 32%, 29%) !default;
+$color-green-light-mode:				$color-green-light-mode-high !default;
+$color-green-dark-mode-root:			hsl(#{$hue-green}, 15%, 1%) !default;
+$color-green-dark-mode-ground:			hsl(#{$hue-green}, 15%, 18%) !default;
+$color-green-dark-mode-low:				hsl(#{$hue-green}, 15%, 15%) !default;
+$color-green-dark-mode-moderate:		hsl(#{$hue-green}, 32%, 24%) !default;
+$color-green-dark-mode-high:			hsl(#{$hue-green}, 32%, 38%) !default;
+$color-green-dark-mode-important:		hsl(#{$hue-green}, 32%, 47%) !default;
+$color-green-dark-mode-critical:		hsl(#{$hue-green}, 32%, 66%) !default;
+$color-green-dark-mode:					$color-green-dark-mode-important !default;
+$color-green-root:						$color-green-light-mode-root !default;
+$color-green-ground:					$color-green-light-mode-ground !default;
+$color-green-low:						$color-green-light-mode-low !default;
+$color-green-moderate:					$color-green-light-mode-moderate !default;
+$color-green-high:						$color-green-light-mode-high !default;
+$color-green-important:					$color-green-light-mode-important !default;
+$color-green-critical:					$color-green-light-mode-critical !default;
+$color-green:							$color-green-light-mode !default;
+
+$color-blue-light-mode-root:			hsl(#{$hue-blue}, 67%, 100%) !default;
+$color-blue-light-mode-ground:			hsl(#{$hue-blue}, 67%, 100%) !default;
+$color-blue-light-mode-low:				hsl(#{$hue-blue}, 67%, 85%) !default;
+$color-blue-light-mode-moderate:		hsl(#{$hue-blue}, 67%, 78%) !default;
+$color-blue-light-mode-high:			hsl(#{$hue-blue}, 67%, 55%) !default;
+$color-blue-light-mode-important:		hsl(#{$hue-blue}, 67%, 43%) !default;
+$color-blue-light-mode-critical:		hsl(#{$hue-blue}, 67%, 32%) !default;
+$color-blue-light-mode:					$color-blue-light-mode-important !default;
+$color-blue-dark-mode-root:				hsl(#{$hue-blue}, 32%, 1%) !default;
+$color-blue-dark-mode-ground:			hsl(#{$hue-blue}, 32%, 12%) !default;
+$color-blue-dark-mode-low:				hsl(#{$hue-blue}, 32%, 8%) !default;
+$color-blue-dark-mode-moderate:			hsl(#{$hue-blue}, 32%, 16%) !default;
+$color-blue-dark-mode-high:				hsl(#{$hue-blue}, 67%, 39%) !default;
+$color-blue-dark-mode-important:		hsl(#{$hue-blue}, 67%, 49%) !default;
+$color-blue-dark-mode-critical:			hsl(#{$hue-blue}, 67%, 66%) !default;
+$color-blue-dark-mode:					$color-blue-dark-mode-important !default;
+$color-blue-root:						$color-blue-light-mode-root !default;
+$color-blue-ground:						$color-blue-light-mode-ground !default;
+$color-blue-low:						$color-blue-light-mode-low !default;
+$color-blue-moderate:					$color-blue-light-mode-moderate !default;
+$color-blue-high:						$color-blue-light-mode-high !default;
+$color-blue-important:					$color-blue-light-mode-important !default;
+$color-blue-critical:					$color-blue-light-mode-critical !default;
+$color-blue:							$color-blue-light-mode !default;
+
+$color-magenta-light-mode-root:			hsl(#{$hue-magenta}, 100%, 100%) !default;
+$color-magenta-light-mode-ground:		hsl(#{$hue-magenta}, 100%, 100%) !default;
+$color-magenta-light-mode-low:			hsl(#{$hue-magenta}, 100%, 88%) !default;
+$color-magenta-light-mode-moderate:		hsl(#{$hue-magenta}, 100%, 80%) !default;
+$color-magenta-light-mode-high:			hsl(#{$hue-magenta}, 100%, 66%) !default;
+$color-magenta-light-mode-important:	hsl(#{$hue-magenta}, 100%, 45%) !default;
+$color-magenta-light-mode-critical:		hsl(#{$hue-magenta}, 100%, 35%) !default;
+$color-magenta-light-mode:				$color-magenta-light-mode-high !default;
+$color-magenta-dark-mode-root:			hsl(#{$hue-magenta}, 100%, 1%) !default;
+$color-magenta-dark-mode-ground:		hsl(#{$hue-magenta}, 100%, 12%) !default;
+$color-magenta-dark-mode-low:			hsl(#{$hue-magenta}, 100%, 8%) !default;
+$color-magenta-dark-mode-moderate:		hsl(#{$hue-magenta}, 100%, 18%) !default;
+$color-magenta-dark-mode-high:			hsl(#{$hue-magenta}, 100%, 40%) !default;
+$color-magenta-dark-mode-important:		hsl(#{$hue-magenta}, 100%, 52%) !default;
+$color-magenta-dark-mode-critical:		hsl(#{$hue-magenta}, 100%, 74%) !default;
+$color-magenta-dark-mode:				$color-magenta-dark-mode-important !default;
+$color-magenta-root:					$color-magenta-light-mode-root !default;
+$color-magenta-ground:					$color-magenta-light-mode-ground !default;
+$color-magenta-low:						$color-magenta-light-mode-low !default;
+$color-magenta-moderate:				$color-magenta-light-mode-moderate !default;
+$color-magenta-high:					$color-magenta-light-mode-high !default;
+$color-magenta-important:				$color-magenta-light-mode-important !default;
+$color-magenta-critical:				$color-magenta-light-mode-critical !default;
+$color-magenta:							$color-magenta-light-mode !default;
+
+$color-text-light-mode-high-contrast:	hsla(0, 0%, 0%, 0.99) !default;
+$color-text-light-mode-primary: 		hsla(0, 0%, 0%, 0.99) !default;
+$color-text-light-mode-secondary:		hsla(0, 0%, 0%, 0.66) !default;
+$color-text-light-mode-tertiary:		hsla(0, 0%, 0%, 0.54) !default;
+$color-text-light-mode-quaternary:		hsla(0, 0%, 0%, 0.42) !default;
+$color-text-light-mode:					$color-text-light-mode-primary !default;
+
+$color-text-dark-mode-high-contrast:	hsla(0, 0%, 100%, 1) !default;
+$color-text-dark-mode-primary:			hsla(0, 0%, 100%, 0.80) !default;
+$color-text-dark-mode-secondary:		hsla(0, 0%, 100%, 0.65) !default;
+$color-text-dark-mode-tertiary:			hsla(0, 0%, 100%, 0.55) !default;
+$color-text-dark-mode-quaternary:		hsla(0, 0%, 100%, 0.38) !default;
+$color-text-dark-mode:					$color-text-dark-mode-primary !default;
+
+$color-text-high-contrast:				$color-text-light-mode-high-contrast !default;
+$color-text-primary:					$color-text-light-mode-primary !default;
+$color-text-secondary:					$color-text-light-mode-secondary !default;
+$color-text-tertiary:					$color-text-light-mode-tertiary !default;
+$color-text-quaternary:					$color-text-light-mode-quaternary !default;
+$color-text:							$color-text-primary !default;
+
+$color-base-light-mode-root:			hsl(0, 0%, 100%) !default;
+$color-base-light-mode-ground:			hsl(0, 0%, 100%) !default;
+$color-base-light-mode-low:				hsla(0, 0%, 0%, 0.04) !default;
+$color-base-light-mode-moderate:		hsla(0, 0%, 0%, 0.10) !default;
+$color-base-light-mode-high:			hsla(0, 0%, 0%, 0.42) !default;
+$color-base-light-mode-important:		hsla(0, 0%, 0%, 0.55) !default;
+$color-base-light-mode-critical:		hsla(0, 0%, 0%, 0.66) !default;
+$color-base-light-mode:					$color-base-light-mode-important !default;
+
+$color-base-dark-mode-root:				hsl(0, 0%, 1%) !default;
+$color-base-dark-mode-ground:			hsl(0, 0%, 14%) !default;
+$color-base-dark-mode-low:				hsl(0, 0%, 10%) !default;
+$color-base-dark-mode-moderate:			hsl(0, 0%, 24%) !default;
+$color-base-dark-mode-high:				hsl(0, 0%, 46%) !default;
+$color-base-dark-mode-important:		hsl(0, 0%, 58%) !default;
+$color-base-dark-mode-critical:			hsl(0, 0%, 72%) !default;
+$color-base-dark-mode:					$color-base-dark-mode-important !default;
+
+$color-base-root:						$color-base-light-mode-root !default;
+$color-base-ground:						$color-base-light-mode-ground !default;
+$color-base-low:						$color-base-light-mode-low !default;
+$color-base-moderate:					$color-base-light-mode-moderate !default;
+$color-base-high:						$color-base-light-mode-high !default;
+$color-base-important:					$color-base-light-mode-important !default;
+$color-base-critical:					$color-base-light-mode-critical !default;
+$color-base:							$color-base-important !default;
+
+$color-primary-light-mode-root:			$color-magenta-light-mode-root !default;
+$color-primary-light-mode-ground:		$color-magenta-light-mode-ground !default;
+$color-primary-light-mode-low:			$color-magenta-light-mode-low !default;
+$color-primary-light-mode-moderate:		$color-magenta-light-mode-moderate !default;
+$color-primary-light-mode-high:			$color-magenta-light-mode-high !default;
+$color-primary-light-mode-important:	$color-magenta-light-mode-important !default;
+$color-primary-light-mode-critical:		$color-magenta-light-mode-critical !default;
+$color-primary-light-mode:				$color-magenta-light-mode !default;
+$color-primary-dark-mode-root:			$color-magenta-dark-mode-root !default;
+$color-primary-dark-mode-ground:		$color-magenta-dark-mode-ground !default;
+$color-primary-dark-mode-low:			$color-magenta-dark-mode-low !default;
+$color-primary-dark-mode-moderate:		$color-magenta-dark-mode-moderate !default;
+$color-primary-dark-mode-high:			$color-magenta-dark-mode-high !default;
+$color-primary-dark-mode-important:		$color-magenta-dark-mode-important !default;
+$color-primary-dark-mode-critical:		$color-magenta-dark-mode-critical !default;
+$color-primary-dark-mode:				$color-magenta-dark-mode !default;
+$color-primary-root:					$color-magenta-root !default;
+$color-primary-ground:					$color-magenta-ground !default;
+$color-primary-low:						$color-magenta-low !default;
+$color-primary-moderate:				$color-magenta-moderate !default;
+$color-primary-high:					$color-magenta-high !default;
+$color-primary-important:				$color-magenta-important !default;
+$color-primary-critical:				$color-magenta-critical !default;
+$color-primary:							$color-magenta !default;
+
+$color-secondary-light-mode-root:		$color-green-light-mode-root !default;
+$color-secondary-light-mode-ground:		$color-green-light-mode-ground !default;
+$color-secondary-light-mode-low:		$color-green-light-mode-low !default;
+$color-secondary-light-mode-moderate:	$color-green-light-mode-moderate !default;
+$color-secondary-light-mode-high:		$color-green-light-mode-high !default;
+$color-secondary-light-mode-important:	$color-green-light-mode-important !default;
+$color-secondary-light-mode-critical:	$color-green-light-mode-critical !default;
+$color-secondary-light-mode:			$color-green-light-mode !default;
+$color-secondary-dark-mode-root:		$color-green-dark-mode-root !default;
+$color-secondary-dark-mode-ground:		$color-green-dark-mode-ground !default;
+$color-secondary-dark-mode-low:			$color-green-dark-mode-low !default;
+$color-secondary-dark-mode-moderate:	$color-green-dark-mode-moderate !default;
+$color-secondary-dark-mode-high:		$color-green-dark-mode-high !default;
+$color-secondary-dark-mode-important:	$color-green-dark-mode-important !default;
+$color-secondary-dark-mode-critical:	$color-green-dark-mode-critical !default;
+$color-secondary-dark-mode:				$color-green-dark-mode !default;
+$color-secondary-root:					$color-green-root !default;
+$color-secondary-ground:				$color-green-ground !default;
+$color-secondary-low:					$color-green-low !default;
+$color-secondary-moderate:				$color-green-moderate !default;
+$color-secondary-high:					$color-green-high !default;
+$color-secondary-important:				$color-green-important !default;
+$color-secondary-critical:				$color-green-critical !default;
+$color-secondary:						$color-green !default;
+
+$color-success-light-mode-root:			$color-green-light-mode-root !default;
+$color-success-light-mode-ground:		$color-green-light-mode-ground !default;
+$color-success-light-mode-low:			$color-green-light-mode-low !default;
+$color-success-light-mode-moderate:		$color-green-light-mode-moderate !default;
+$color-success-light-mode-high:			$color-green-light-mode-high !default;
+$color-success-light-mode-important:	$color-green-light-mode-important !default;
+$color-success-light-mode-critical:		$color-green-light-mode-critical !default;
+$color-success-light-mode:				$color-green-light-mode !default;
+$color-success-dark-mode-root:			$color-green-dark-mode-root !default;
+$color-success-dark-mode-ground:		$color-green-dark-mode-ground !default;
+$color-success-dark-mode-low:			$color-green-dark-mode-low !default;
+$color-success-dark-mode-moderate:		$color-green-dark-mode-moderate !default;
+$color-success-dark-mode-high:			$color-green-dark-mode-high !default;
+$color-success-dark-mode-important:		$color-green-dark-mode-important !default;
+$color-success-dark-mode-critical:		$color-green-dark-mode-critical !default;
+$color-success-dark-mode:				$color-green-dark-mode !default;
+$color-success-root:					$color-green-root !default;
+$color-success-ground:					$color-green-ground !default;
+$color-success-low:						$color-green-low !default;
+$color-success-moderate:				$color-green-moderate !default;
+$color-success-high:					$color-green-high !default;
+$color-success-important:				$color-green-important !default;
+$color-success-critical:				$color-green-critical !default;
+$color-success:							$color-green !default;
+
+$color-error-light-mode-root:			$color-red-light-mode-root !default;
+$color-error-light-mode-ground:			$color-red-light-mode-ground !default;
+$color-error-light-mode-low:			$color-red-light-mode-low !default;
+$color-error-light-mode-moderate:		$color-red-light-mode-moderate !default;
+$color-error-light-mode-high:			$color-red-light-mode-high !default;
+$color-error-light-mode-important:		$color-red-light-mode-important !default;
+$color-error-light-mode-critical:		$color-red-light-mode-critical !default;
+$color-error-light-mode:				$color-red-light-mode !default;
+$color-error-dark-mode-root:			$color-red-dark-mode-root !default;
+$color-error-dark-mode-ground:			$color-red-dark-mode-ground !default;
+$color-error-dark-mode-low:				$color-red-dark-mode-low !default;
+$color-error-dark-mode-moderate:		$color-red-dark-mode-moderate !default;
+$color-error-dark-mode-high:			$color-red-dark-mode-high !default;
+$color-error-dark-mode-important:		$color-red-dark-mode-important !default;
+$color-error-dark-mode-critical:		$color-red-dark-mode-critical !default;
+$color-error-dark-mode:					$color-red-dark-mode !default;
+$color-error-root:						$color-red-root !default;
+$color-error-ground:					$color-red-ground !default;
+$color-error-low:						$color-red-low !default;
+$color-error-moderate:					$color-red-moderate !default;
+$color-error-high:						$color-red-high !default;
+$color-error-important:					$color-red-important !default;
+$color-error-critical:					$color-red-critical !default;
+$color-error:							$color-red !default;
+
+$color-selected-light-mode-root:		$color-blue-light-mode-root !default;
+$color-selected-light-mode-ground:		$color-blue-light-mode-ground !default;
+$color-selected-light-mode-low:			$color-blue-light-mode-low !default;
+$color-selected-light-mode-moderate:	$color-blue-light-mode-moderate !default;
+$color-selected-light-mode-high:		$color-blue-light-mode-high !default;
+$color-selected-light-mode-important:	$color-blue-light-mode-important !default;
+$color-selected-light-mode-critical:	$color-blue-light-mode-critical !default;
+$color-selected-light-mode:				$color-blue-light-mode !default;
+$color-selected-dark-mode-root:			$color-blue-dark-mode-root !default;
+$color-selected-dark-mode-ground:		$color-blue-dark-mode-ground !default;
+$color-selected-dark-mode-low:			$color-blue-dark-mode-low !default;
+$color-selected-dark-mode-moderate:		$color-blue-dark-mode-moderate !default;
+$color-selected-dark-mode-high:			$color-blue-dark-mode-high !default;
+$color-selected-dark-mode-important:	$color-blue-dark-mode-important !default;
+$color-selected-dark-mode-critical:		$color-blue-dark-mode-critical !default;
+$color-selected-dark-mode:				$color-blue-dark-mode !default;
+$color-selected-root:					$color-blue-root !default;
+$color-selected-ground:					$color-blue-ground !default;
+$color-selected-low:					$color-blue-low !default;
+$color-selected-moderate:				$color-blue-moderate !default;
+$color-selected-high:					$color-blue-high !default;
+$color-selected-important:				$color-blue-important !default;
+$color-selected-critical:				$color-blue-critical !default;
+$color-selected:						$color-blue !default;
+
+$color-focus-light-mode-root:			$color-orange-light-mode-root !default;
+$color-focus-light-mode-ground:			$color-orange-light-mode-ground !default;
+$color-focus-light-mode-low:			$color-orange-light-mode-low !default;
+$color-focus-light-mode-moderate:		$color-orange-light-mode-moderate !default;
+$color-focus-light-mode-high:			$color-orange-light-mode-high !default;
+$color-focus-light-mode-important:		$color-orange-light-mode-important !default;
+$color-focus-light-mode-critical:		$color-orange-light-mode-critical !default;
+$color-focus-light-mode:				$color-orange-light-mode !default;
+$color-focus-dark-mode-root:			$color-orange-dark-mode-root !default;
+$color-focus-dark-mode-ground:			$color-orange-dark-mode-ground !default;
+$color-focus-dark-mode-low:				$color-orange-dark-mode-low !default;
+$color-focus-dark-mode-moderate:		$color-orange-dark-mode-moderate !default;
+$color-focus-dark-mode-high:			$color-orange-dark-mode-high !default;
+$color-focus-dark-mode-important:		$color-orange-dark-mode-important !default;
+$color-focus-dark-mode-critical:		$color-orange-dark-mode-critical !default;
+$color-focus-dark-mode:					$color-orange-dark-mode !default;
+$color-focus-root:						$color-orange-root !default;
+$color-focus-ground:					$color-orange-ground !default;
+$color-focus-low:						$color-orange-low !default;
+$color-focus-moderate:					$color-orange-moderate !default;
+$color-focus-high:						$color-orange-high !default;
+$color-focus-important:					$color-orange-important !default;
+$color-focus-critical:					$color-orange-critical !default;
+$color-focus:							$color-orange !default;
+
+$color-shadow-light-mode-low:			hsla(0, 0%, 0%, 0.04) !default;
+$color-shadow-dark-mode-low:			hsla(0, 0%, 0%, 0.31) !default;
+$color-shadow-low:						$color-shadow-light-mode-low !default;
+$color-shadow:							hsl(0, 0%, 0%) !default;
+$color-backdrop:						hsla(0, 0%, 0%, 0.6) !default;
+$color-placeholder:						hsla(0, 0%, 0%, 0.5) !default;
+$color-overlay:							hsla(0, 0%, 35%, 0.65) !default;
+
+@mixin colors-default {
+	--color-red-root: 						#{$color-red-root};
+	--color-red-ground: 					#{$color-red-ground};
+	--color-red-low: 						#{$color-red-low};
+	--color-red-moderate: 					#{$color-red-moderate};
+	--color-red-high: 						#{$color-red-high};
+	--color-red-important: 					#{$color-red-important};
+	--color-red-critical: 					#{$color-red-critical};
+	--color-red:							#{$color-red};
+
+	--color-orange-root: 					#{$color-orange-root};
+	--color-orange-ground: 					#{$color-orange-ground};
+	--color-orange-low: 					#{$color-orange-low};
+	--color-orange-moderate: 				#{$color-orange-moderate};
+	--color-orange-high: 					#{$color-orange-high};
+	--color-orange-important: 				#{$color-orange-important};
+	--color-orange-critical: 				#{$color-orange-critical};
+	--color-orange:							#{$color-orange};
+
+	--color-green-root: 					#{$color-green-root};
+	--color-green-ground: 					#{$color-green-ground};
+	--color-green-low: 						#{$color-green-low};
+	--color-green-moderate: 				#{$color-green-moderate};
+	--color-green-high: 					#{$color-green-high};
+	--color-green-important: 				#{$color-green-important};
+	--color-green-critical: 				#{$color-green-critical};
+	--color-green:							#{$color-green};
+
+	--color-blue-root: 						#{$color-blue-root};
+	--color-blue-ground: 					#{$color-blue-ground};
+	--color-blue-low: 						#{$color-blue-low};
+	--color-blue-moderate: 					#{$color-blue-moderate};
+	--color-blue-high: 						#{$color-blue-high};
+	--color-blue-important: 				#{$color-blue-important};
+	--color-blue-critical: 					#{$color-blue-critical};
+	--color-blue:							#{$color-blue};
+
+	--color-magenta-root: 					#{$color-magenta-root};
+	--color-magenta-ground: 				#{$color-magenta-ground};
+	--color-magenta-low: 					#{$color-magenta-low};
+	--color-magenta-moderate: 				#{$color-magenta-moderate};
+	--color-magenta-high: 					#{$color-magenta-high};
+	--color-magenta-important: 				#{$color-magenta-important};
+	--color-magenta-critical: 				#{$color-magenta-critical};
+	--color-magenta:						#{$color-magenta};
+
+	--color-base-root: 						#{$color-base-root};
+	--color-base-ground: 					#{$color-base-ground};
+	--color-base-low: 						#{$color-base-low};
+	--color-base-moderate: 					#{$color-base-moderate};
+	--color-base-high: 						#{$color-base-high};
+	--color-base-important: 				#{$color-base-important};
+	--color-base-critical: 					#{$color-base-critical};
+	--color-base: 							#{$color-base};
+
+	--color-text-high-contrast: 			#{$color-text-high-contrast};
+	--color-text-primary: 					#{$color-text-primary};
+	--color-text-secondary: 				#{$color-text-secondary};
+	--color-text-tertiary: 					#{$color-text-tertiary};
+	--color-text-quaternary: 				#{$color-text-quaternary};
+	--color-text: 							#{$color-text};
+
+	--color-primary-root: 					#{$color-primary-root};
+	--color-primary-ground: 				#{$color-primary-ground};
+	--color-primary-low: 					#{$color-primary-low};
+	--color-primary-moderate: 				#{$color-primary-moderate};
+	--color-primary-high: 					#{$color-primary-high};
+	--color-primary-important: 				#{$color-primary-important};
+	--color-primary-critical: 				#{$color-primary-critical};
+	--color-primary:						#{$color-primary};
+
+	--color-secondary-root: 				#{$color-secondary-root};
+	--color-secondary-ground: 				#{$color-secondary-ground};
+	--color-secondary-low: 					#{$color-secondary-low};
+	--color-secondary-moderate: 			#{$color-secondary-moderate};
+	--color-secondary-high: 				#{$color-secondary-high};
+	--color-secondary-important: 			#{$color-secondary-important};
+	--color-secondary-critical: 			#{$color-secondary-critical};
+	--color-secondary:						#{$color-secondary};
+
+	--color-success-root: 					#{$color-success-root};
+	--color-success-ground: 				#{$color-success-ground};
+	--color-success-low: 					#{$color-success-low};
+	--color-success-moderate: 				#{$color-success-moderate};
+	--color-success-high: 					#{$color-success-high};
+	--color-success-important: 				#{$color-success-important};
+	--color-success-critical: 				#{$color-success-critical};
+	--color-success:						#{$color-success};
+
+	--color-error-root: 					#{$color-error-root};
+	--color-error-ground: 					#{$color-error-ground};
+	--color-error-low: 						#{$color-error-low};
+	--color-error-moderate: 				#{$color-error-moderate};
+	--color-error-high: 					#{$color-error-high};
+	--color-error-important: 				#{$color-error-important};
+	--color-error-critical: 				#{$color-error-critical};
+	--color-error:							#{$color-error};
+
+	--color-selected-root: 					#{$color-selected-root};
+	--color-selected-ground: 				#{$color-selected-ground};
+	--color-selected-low: 					#{$color-selected-low};
+	--color-selected-moderate: 				#{$color-selected-moderate};
+	--color-selected-high: 					#{$color-selected-high};
+	--color-selected-important: 			#{$color-selected-important};
+	--color-selected-critical: 				#{$color-selected-critical};
+	--color-selected:						#{$color-selected};
+
+	--color-focus-root: 					#{$color-focus-root};
+	--color-focus-ground: 					#{$color-focus-ground};
+	--color-focus-low: 						#{$color-focus-low};
+	--color-focus-moderate: 				#{$color-focus-moderate};
+	--color-focus-high: 					#{$color-focus-high};
+	--color-focus-important: 				#{$color-focus-important};
+	--color-focus-critical: 				#{$color-focus-critical};
+	--color-focus:							#{$color-focus};
+
+	--color-shadow: 						#{$color-shadow};
+	--color-shadow-low: 					#{$color-shadow-low};
+	--color-backdrop: 						#{$color-backdrop};
+	--color-placeholder: 					#{$color-placeholder};
+	--color-overlay: 						#{$color-overlay};
+}
+
+@mixin colors-light-mode {
+	--color-red-light-mode-root: 				#{$color-red-light-mode-root};
+	--color-red-light-mode-ground: 				#{$color-red-light-mode-ground};
+	--color-red-light-mode-low: 				#{$color-red-light-mode-low};
+	--color-red-light-mode-moderate: 			#{$color-red-light-mode-moderate};
+	--color-red-light-mode-high: 				#{$color-red-light-mode-high};
+	--color-red-light-mode-important: 			#{$color-red-light-mode-important};
+	--color-red-light-mode-critical: 			#{$color-red-light-mode-critical};
+	--color-red-light-mode:						#{$color-red-light-mode};
+
+	--color-orange-light-mode-root: 			#{$color-orange-light-mode-root};
+	--color-orange-light-mode-ground: 			#{$color-orange-light-mode-ground};
+	--color-orange-light-mode-low: 				#{$color-orange-light-mode-low};
+	--color-orange-light-mode-moderate: 		#{$color-orange-light-mode-moderate};
+	--color-orange-light-mode-high: 			#{$color-orange-light-mode-high};
+	--color-orange-light-mode-important: 		#{$color-orange-light-mode-important};
+	--color-orange-light-mode-critical: 		#{$color-orange-light-mode-critical};
+	--color-orange-light-mode:					#{$color-orange-light-mode};
+
+	--color-green-light-mode-root: 				#{$color-green-light-mode-root};
+	--color-green-light-mode-ground: 			#{$color-green-light-mode-ground};
+	--color-green-light-mode-low: 				#{$color-green-light-mode-low};
+	--color-green-light-mode-moderate: 			#{$color-green-light-mode-moderate};
+	--color-green-light-mode-high: 				#{$color-green-light-mode-high};
+	--color-green-light-mode-important: 		#{$color-green-light-mode-important};
+	--color-green-light-mode-critical: 			#{$color-green-light-mode-critical};
+	--color-green-light-mode:					#{$color-green-light-mode};
+
+	--color-blue-light-mode-root: 				#{$color-blue-light-mode-root};
+	--color-blue-light-mode-ground: 			#{$color-blue-light-mode-ground};
+	--color-blue-light-mode-low: 				#{$color-blue-light-mode-low};
+	--color-blue-light-mode-moderate: 			#{$color-blue-light-mode-moderate};
+	--color-blue-light-mode-high: 				#{$color-blue-light-mode-high};
+	--color-blue-light-mode-important: 			#{$color-blue-light-mode-important};
+	--color-blue-light-mode-critical: 			#{$color-blue-light-mode-critical};
+	--color-blue-light-mode:					#{$color-blue-light-mode};
+
+	--color-magenta-light-mode-root: 			#{$color-magenta-light-mode-root};
+	--color-magenta-light-mode-ground: 			#{$color-magenta-light-mode-ground};
+	--color-magenta-light-mode-low: 			#{$color-magenta-light-mode-low};
+	--color-magenta-light-mode-moderate: 		#{$color-magenta-light-mode-moderate};
+	--color-magenta-light-mode-high: 			#{$color-magenta-light-mode-high};
+	--color-magenta-light-mode-important: 		#{$color-magenta-light-mode-important};
+	--color-magenta-light-mode-critical: 		#{$color-magenta-light-mode-critical};
+	--color-magenta-light-mode:					#{$color-magenta-light-mode};
+
+	--color-base-light-mode-root: 				#{$color-base-light-mode-root};
+	--color-base-light-mode-ground: 			#{$color-base-light-mode-ground};
+	--color-base-light-mode-low: 				#{$color-base-light-mode-low};
+	--color-base-light-mode-moderate: 			#{$color-base-light-mode-moderate};
+	--color-base-light-mode-high: 				#{$color-base-light-mode-high};
+	--color-base-light-mode-important: 			#{$color-base-light-mode-important};
+	--color-base-light-mode-critical: 			#{$color-base-light-mode-critical};
+	--color-base-light-mode: 					#{$color-base-light-mode};
+
+	--color-text-light-mode-high-contrast: 		#{$color-text-light-mode-high-contrast};
+	--color-text-light-mode-primary: 			#{$color-text-light-mode-primary};
+	--color-text-light-mode-secondary: 			#{$color-text-light-mode-secondary};
+	--color-text-light-mode-tertiary: 			#{$color-text-light-mode-tertiary};
+	--color-text-light-mode-quaternary: 		#{$color-text-light-mode-quaternary};
+	--color-text-light-mode: 					#{$color-text-light-mode};
+
+	--color-primary-light-mode-high: 			#{$color-primary-light-mode-high};
+	--color-primary-light-mode-important: 		#{$color-primary-light-mode-important};
+	--color-primary-light-mode-critical: 		#{$color-primary-light-mode-critical};
+	--color-primary-light-mode:					#{$color-primary-light-mode};
+
+	--color-secondary-light-mode-high: 			#{$color-secondary-light-mode-high};
+	--color-secondary-light-mode-important: 	#{$color-secondary-light-mode-important};
+	--color-secondary-light-mode-critical: 		#{$color-secondary-light-mode-critical};
+	--color-secondary-light-mode:				#{$color-secondary-light-mode};
+
+	--color-success-light-mode-high: 			#{$color-success-light-mode-high};
+	--color-success-light-mode-important: 		#{$color-success-light-mode-important};
+	--color-success-light-mode-critical: 		#{$color-success-light-mode-critical};
+	--color-success-light-mode: 				#{$color-success-light-mode};
+
+	--color-error-light-mode-high: 				#{$color-error-light-mode-high};
+	--color-error-light-mode-important: 		#{$color-error-light-mode-important};
+	--color-error-light-mode-critical: 			#{$color-error-light-mode-critical};
+	--color-error-light-mode: 					#{$color-error-light-mode};
+
+	--color-selected-light-mode-high: 			#{$color-selected-light-mode-high};
+	--color-selected-light-mode-important: 		#{$color-selected-light-mode-important};
+	--color-selected-light-mode-critical: 		#{$color-selected-light-mode-critical};
+	--color-selected-light-mode: 				#{$color-selected-light-mode};
+
+	--color-focus-light-mode-high: 				#{$color-focus-light-mode-high};
+	--color-focus-light-mode-important: 		#{$color-focus-light-mode-important};
+	--color-focus-light-mode-critical: 			#{$color-focus-light-mode-critical};
+	--color-focus-light-mode: 					#{$color-focus-light-mode};
+
+	--color-shadow-light-mode-low: 				#{$color-shadow-light-mode-low};
+}
+
+@mixin colors-dark-mode {
+	--color-red-dark-mode-root: 				#{$color-red-dark-mode-root};
+	--color-red-dark-mode-ground: 				#{$color-red-dark-mode-ground};
+	--color-red-dark-mode-low: 					#{$color-red-dark-mode-low};
+	--color-red-dark-mode-moderate: 			#{$color-red-dark-mode-moderate};
+	--color-red-dark-mode-high: 				#{$color-red-dark-mode-high};
+	--color-red-dark-mode-important: 			#{$color-red-dark-mode-important};
+	--color-red-dark-mode-critical: 			#{$color-red-dark-mode-critical};
+	--color-red-dark-mode:						#{$color-red-dark-mode};
+
+	--color-orange-dark-mode-root: 				#{$color-orange-dark-mode-root};
+	--color-orange-dark-mode-ground: 			#{$color-orange-dark-mode-ground};
+	--color-orange-dark-mode-low: 				#{$color-orange-dark-mode-low};
+	--color-orange-dark-mode-moderate: 			#{$color-orange-dark-mode-moderate};
+	--color-orange-dark-mode-high: 				#{$color-orange-dark-mode-high};
+	--color-orange-dark-mode-important: 		#{$color-orange-dark-mode-important};
+	--color-orange-dark-mode-critical: 			#{$color-orange-dark-mode-critical};
+	--color-orange-dark-mode:					#{$color-orange-dark-mode};
+
+	--color-green-dark-mode-root: 				#{$color-green-dark-mode-root};
+	--color-green-dark-mode-ground: 			#{$color-green-dark-mode-ground};
+	--color-green-dark-mode-low: 				#{$color-green-dark-mode-low};
+	--color-green-dark-mode-moderate: 			#{$color-green-dark-mode-moderate};
+	--color-green-dark-mode-high: 				#{$color-green-dark-mode-high};
+	--color-green-dark-mode-important: 			#{$color-green-dark-mode-important};
+	--color-green-dark-mode-critical: 			#{$color-green-dark-mode-critical};
+	--color-green-dark-mode:					#{$color-green-dark-mode};
+
+	--color-blue-dark-mode-root: 				#{$color-blue-dark-mode-root};
+	--color-blue-dark-mode-ground: 				#{$color-blue-dark-mode-ground};
+	--color-blue-dark-mode-low: 				#{$color-blue-dark-mode-low};
+	--color-blue-dark-mode-moderate: 			#{$color-blue-dark-mode-moderate};
+	--color-blue-dark-mode-high: 				#{$color-blue-dark-mode-high};
+	--color-blue-dark-mode-important: 			#{$color-blue-dark-mode-important};
+	--color-blue-dark-mode-critical: 			#{$color-blue-dark-mode-critical};
+	--color-blue-dark-mode:						#{$color-blue-dark-mode};
+
+	--color-magenta-dark-mode-root: 			#{$color-magenta-dark-mode-root};
+	--color-magenta-dark-mode-ground: 			#{$color-magenta-dark-mode-ground};
+	--color-magenta-dark-mode-low: 				#{$color-magenta-dark-mode-low};
+	--color-magenta-dark-mode-moderate: 		#{$color-magenta-dark-mode-moderate};
+	--color-magenta-dark-mode-high: 			#{$color-magenta-dark-mode-high};
+	--color-magenta-dark-mode-important: 		#{$color-magenta-dark-mode-important};
+	--color-magenta-dark-mode-critical: 		#{$color-magenta-dark-mode-critical};
+	--color-magenta-dark-mode:					#{$color-magenta-dark-mode};
+
+	--color-base-dark-mode-root: 				#{$color-base-dark-mode-root};
+	--color-base-dark-mode-ground: 				#{$color-base-dark-mode-ground};
+	--color-base-dark-mode-low: 				#{$color-base-dark-mode-low};
+	--color-base-dark-mode-moderate: 			#{$color-base-dark-mode-moderate};
+	--color-base-dark-mode-high: 				#{$color-base-dark-mode-high};
+	--color-base-dark-mode-important: 			#{$color-base-dark-mode-important};
+	--color-base-dark-mode-critical: 			#{$color-base-dark-mode-critical};
+	--color-base-dark-mode: 					#{$color-base-dark-mode};
+
+	--color-text-dark-mode-high-contrast: 		#{$color-text-dark-mode-high-contrast};
+	--color-text-dark-mode-primary: 			#{$color-text-dark-mode-primary};
+	--color-text-dark-mode-secondary: 			#{$color-text-dark-mode-secondary};
+	--color-text-dark-mode-tertiary: 			#{$color-text-dark-mode-tertiary};
+	--color-text-dark-mode-quaternary: 			#{$color-text-dark-mode-quaternary};
+	--color-text-dark-mode: 					#{$color-text-dark-mode};
+
+	--color-primary-dark-mode-high: 			#{$color-primary-dark-mode-high};
+	--color-primary-dark-mode-important: 		#{$color-primary-dark-mode-important};
+	--color-primary-dark-mode-critical: 		#{$color-primary-dark-mode-critical};
+	--color-primary-dark-mode:					#{$color-primary-dark-mode};
+
+	--color-secondary-dark-mode-high: 			#{$color-secondary-dark-mode-high};
+	--color-secondary-dark-mode-important: 		#{$color-secondary-dark-mode-important};
+	--color-secondary-dark-mode-critical: 		#{$color-secondary-dark-mode-critical};
+	--color-secondary-dark-mode:				#{$color-secondary-dark-mode};
+
+	--color-success-dark-mode-high: 			#{$color-success-dark-mode-high};
+	--color-success-dark-mode-important: 		#{$color-success-dark-mode-important};
+	--color-success-dark-mode-critical: 		#{$color-success-dark-mode-critical};
+	--color-success-dark-mode: 					#{$color-success-dark-mode};
+
+	--color-error-dark-mode-high: 				#{$color-error-dark-mode-high};
+	--color-error-dark-mode-important: 			#{$color-error-dark-mode-important};
+	--color-error-dark-mode-critical: 			#{$color-error-dark-mode-critical};
+	--color-error-dark-mode: 					#{$color-error-dark-mode};
+
+	--color-selected-dark-mode-high: 			#{$color-selected-dark-mode-high};
+	--color-selected-dark-mode-important: 		#{$color-selected-dark-mode-important};
+	--color-selected-dark-mode-critical: 		#{$color-selected-dark-mode-critical};
+	--color-selected-dark-mode: 				#{$color-selected-dark-mode};
+
+	--color-focus-dark-mode-high: 				#{$color-focus-dark-mode-high};
+	--color-focus-dark-mode-important: 			#{$color-focus-dark-mode-important};
+	--color-focus-dark-mode-critical: 			#{$color-focus-dark-mode-critical};
+	--color-focus-dark-mode: 					#{$color-focus-dark-mode};
+
+	--color-shadow-dark-mode-low: 				#{$color-shadow-dark-mode-low};
+}
+
+@mixin colors-default-light-mode {
+	--color-base-root: 							#{$color-base-light-mode-root};
+	--color-base-ground: 						#{$color-base-light-mode-ground};
+	--color-base-low: 							#{$color-base-light-mode-low};
+	--color-base-moderate: 						#{$color-base-light-mode-moderate};
+	--color-base-high: 							#{$color-base-light-mode-high};
+	--color-base-important: 					#{$color-base-light-mode-important};
+	--color-base-critical: 						#{$color-base-light-mode-critical};
+	--color-base: 								#{$color-base-light-mode};
+
+	--color-text-primary: 						#{$color-text-light-mode-primary};
+	--color-text-secondary: 					#{$color-text-light-mode-secondary};
+	--color-text-tertiary: 						#{$color-text-light-mode-tertiary};
+	--color-text-quaternary: 					#{$color-text-light-mode-quaternary};
+	--color-text: 								#{$color-text-light-mode};
+
+	--color-primary-high: 						#{$color-primary-light-mode-high};
+	--color-primary-important: 					#{$color-primary-light-mode-important};
+	--color-primary-critical: 					#{$color-primary-light-mode-critical};
+	--color-primary:							#{$color-primary-light-mode};
+
+	--color-secondary-high: 					#{$color-secondary-light-mode-high};
+	--color-secondary-important: 				#{$color-secondary-light-mode-important};
+	--color-secondary-critical: 				#{$color-secondary-light-mode-critical};
+	--color-secondary:							#{$color-secondary-light-mode};
+
+	--color-success-high: 						#{$color-success-light-mode-high};
+	--color-success-important: 					#{$color-success-light-mode-important};
+	--color-success-critical: 					#{$color-success-light-mode-critical};
+	--color-success: 							#{$color-success-light-mode};
+
+	--color-error-high: 						#{$color-error-light-mode-high};
+	--color-error-important: 					#{$color-error-light-mode-important};
+	--color-error-critical: 					#{$color-error-light-mode-critical};
+	--color-error: 								#{$color-error-light-mode};
+
+	--color-selected-high: 						#{$color-selected-light-mode-high};
+	--color-selected-important: 				#{$color-selected-light-mode-important};
+	--color-selected-critical: 					#{$color-selected-light-mode-critical};
+	--color-selected: 							#{$color-selected-light-mode};
+
+	--color-focus-high: 						#{$color-focus-light-mode-high};
+	--color-focus-important: 					#{$color-focus-light-mode-important};
+	--color-focus-critical: 					#{$color-focus-light-mode-critical};
+	--color-focus: 								#{$color-focus-light-mode};
+
+	--color-shadow-low: 						#{$color-shadow-light-mode-low};
+}
+
+@mixin colors-default-dark-mode {
+	--color-red-root: 						#{$color-red-dark-mode-root};
+	--color-red-ground: 					#{$color-red-dark-mode-ground};
+	--color-red-low: 						#{$color-red-dark-mode-low};
+	--color-red-moderate: 					#{$color-red-dark-mode-moderate};
+	--color-red-high: 						#{$color-red-dark-mode-high};
+	--color-red-important: 					#{$color-red-dark-mode-important};
+	--color-red-critical: 					#{$color-red-dark-mode-critical};
+	--color-red:							#{$color-red-dark-mode};
+
+	--color-orange-root: 					#{$color-orange-dark-mode-root};
+	--color-orange-ground: 					#{$color-orange-dark-mode-ground};
+	--color-orange-low: 					#{$color-orange-dark-mode-low};
+	--color-orange-moderate: 				#{$color-orange-dark-mode-moderate};
+	--color-orange-high: 					#{$color-orange-dark-mode-high};
+	--color-orange-important: 				#{$color-orange-dark-mode-important};
+	--color-orange-critical: 				#{$color-orange-dark-mode-critical};
+	--color-orange:							#{$color-orange-dark-mode};
+
+	--color-green-root: 					#{$color-green-dark-mode-root};
+	--color-green-ground: 					#{$color-green-dark-mode-ground};
+	--color-green-low: 						#{$color-green-dark-mode-low};
+	--color-green-moderate: 				#{$color-green-dark-mode-moderate};
+	--color-green-high: 					#{$color-green-dark-mode-high};
+	--color-green-important: 				#{$color-green-dark-mode-important};
+	--color-green-critical: 				#{$color-green-dark-mode-critical};
+	--color-green:							#{$color-green-dark-mode};
+
+	--color-blue-root: 						#{$color-blue-dark-mode-root};
+	--color-blue-ground: 					#{$color-blue-dark-mode-ground};
+	--color-blue-low: 						#{$color-blue-dark-mode-low};
+	--color-blue-moderate: 					#{$color-blue-dark-mode-moderate};
+	--color-blue-high: 						#{$color-blue-dark-mode-high};
+	--color-blue-important: 				#{$color-blue-dark-mode-important};
+	--color-blue-critical: 					#{$color-blue-dark-mode-critical};
+	--color-blue:							#{$color-blue-dark-mode};
+
+	--color-magenta-root: 					#{$color-magenta-dark-mode-root};
+	--color-magenta-ground: 				#{$color-magenta-dark-mode-ground};
+	--color-magenta-low: 					#{$color-magenta-dark-mode-low};
+	--color-magenta-moderate: 				#{$color-magenta-dark-mode-moderate};
+	--color-magenta-high: 					#{$color-magenta-dark-mode-high};
+	--color-magenta-important: 				#{$color-magenta-dark-mode-important};
+	--color-magenta-critical: 				#{$color-magenta-dark-mode-critical};
+	--color-magenta:						#{$color-magenta-dark-mode};
+
+	--color-base-root: 						#{$color-base-dark-mode-root};
+	--color-base-ground: 					#{$color-base-dark-mode-ground};
+	--color-base-low: 						#{$color-base-dark-mode-low};
+	--color-base-moderate: 					#{$color-base-dark-mode-moderate};
+	--color-base-high: 						#{$color-base-dark-mode-high};
+	--color-base-important: 				#{$color-base-dark-mode-important};
+	--color-base-critical: 					#{$color-base-dark-mode-critical};
+	--color-base: 							#{$color-base-dark-mode};
+
+	--color-text-high-contrast: 			#{$color-text-dark-mode-high-contrast};
+	--color-text-primary: 					#{$color-text-dark-mode-primary};
+	--color-text-secondary: 				#{$color-text-dark-mode-secondary};
+	--color-text-tertiary: 					#{$color-text-dark-mode-tertiary};
+	--color-text-quaternary: 				#{$color-text-dark-mode-quaternary};
+	--color-text: 							#{$color-text-dark-mode};
+
+	--color-primary-high: 					#{$color-primary-dark-mode-high};
+	--color-primary-important: 				#{$color-primary-dark-mode-important};
+	--color-primary-critical: 				#{$color-primary-dark-mode-critical};
+	--color-primary:						#{$color-primary-dark-mode};
+
+	--color-secondary-high: 				#{$color-secondary-dark-mode-high};
+	--color-secondary-important: 			#{$color-secondary-dark-mode-important};
+	--color-secondary-critical: 			#{$color-secondary-dark-mode-critical};
+	--color-secondary:						#{$color-secondary-dark-mode};
+
+	--color-success-high: 					#{$color-success-dark-mode-high};
+	--color-success-important: 				#{$color-success-dark-mode-important};
+	--color-success-critical: 				#{$color-success-dark-mode-critical};
+	--color-success: 						#{$color-success-dark-mode};
+
+	--color-error-high: 					#{$color-error-dark-mode-high};
+	--color-error-important: 				#{$color-error-dark-mode-important};
+	--color-error-critical: 				#{$color-error-dark-mode-critical};
+	--color-error: 							#{$color-error-dark-mode};
+
+	--color-selected-high: 					#{$color-selected-dark-mode-high};
+	--color-selected-important: 			#{$color-selected-dark-mode-important};
+	--color-selected-critical: 				#{$color-selected-dark-mode-critical};
+	--color-selected: 						#{$color-selected-dark-mode};
+
+	--color-focus-high: 					#{$color-focus-dark-mode-high};
+	--color-focus-important: 				#{$color-focus-dark-mode-important};
+	--color-focus-critical: 				#{$color-focus-dark-mode-critical};
+	--color-focus: 							#{$color-focus-dark-mode};
+
+	--color-shadow-low: 					#{$color-shadow-dark-mode-low};
+}
+
+:root {
+	@include colors-default;
+	@include colors-dark-mode;
+	@include colors-light-mode;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		//@include colors-default-light-mode;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		// @include colors-default-dark-mode;
+	}
+}

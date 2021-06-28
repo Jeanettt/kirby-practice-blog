@@ -1,4 +1,4 @@
-Title: À propos de moi 
+Title: Mij
 ----
 Text: Doet ie ut nou?
 ----

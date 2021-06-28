@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $kirby->language()->code(); ?>">
+<html lang="nl">
 <head>
     <title><?= $page->title() ?> - <?= $site->title(); ?></title>
     <meta charset="utf-8">

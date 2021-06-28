@@ -1,6 +1,6 @@
 <?php
 
 return [
+    'scssNestedCheck' => true,
     'debug'  => true,
-    'scssNestedCheck' => true
 ];

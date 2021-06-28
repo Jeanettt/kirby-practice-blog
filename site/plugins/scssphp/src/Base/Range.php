@@ -1,34 +1,24 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2015-2020 Leaf Corcoran
+ * @copyright 2015-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\Base;
+namespace Leafo\ScssPhp\Base;
 
 /**
  * Range
  *
  * @author Anthon Pang <anthon.pang@gmail.com>
- *
- * @internal
  */
 class Range
 {
-    /**
-     * @var float|int
-     */
     public $first;
-
-    /**
-     * @var float|int
-     */
     public $last;
 
     /**

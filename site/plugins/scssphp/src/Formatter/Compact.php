@@ -1,27 +1,22 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\Formatter;
+namespace Leafo\ScssPhp\Formatter;
 
-use ScssPhp\ScssPhp\Formatter;
+use Leafo\ScssPhp\Formatter;
 
 /**
  * Compact formatter
  *
  * @author Leaf Corcoran <leafot@gmail.com>
- *
- * @deprecated since 1.4.0. Use the Compressed formatter instead.
- *
- * @internal
  */
 class Compact extends Formatter
 {
@@ -30,8 +25,6 @@ class Compact extends Formatter
      */
     public function __construct()
     {
-        @trigger_error('The Compact formatter is deprecated since 1.4.0. Use the Compressed formatter instead.', E_USER_DEPRECATED);
-
         $this->indentLevel = 0;
         $this->indentChar = '';
         $this->break = '';

@@ -1,27 +1,23 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\Formatter;
+namespace Leafo\ScssPhp\Formatter;
 
-use ScssPhp\ScssPhp\Formatter;
+use Leafo\ScssPhp\Formatter;
+use Leafo\ScssPhp\Formatter\OutputBlock;
 
 /**
  * Debug formatter
  *
  * @author Anthon Pang <anthon.pang@gmail.com>
- *
- * @deprecated since 1.4.0.
- *
- * @internal
  */
 class Debug extends Formatter
 {
@@ -30,8 +26,6 @@ class Debug extends Formatter
      */
     public function __construct()
     {
-        @trigger_error('The Debug formatter is deprecated since 1.4.0.', E_USER_DEPRECATED);
-
         $this->indentLevel = 0;
         $this->indentChar = '';
         $this->break = "\n";

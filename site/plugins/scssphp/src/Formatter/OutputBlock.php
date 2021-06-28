@@ -1,23 +1,20 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\Formatter;
+namespace Leafo\ScssPhp\Formatter;
 
 /**
  * Output block
  *
  * @author Anthon Pang <anthon.pang@gmail.com>
- *
- * @internal
  */
 class OutputBlock
 {
@@ -32,37 +29,37 @@ class OutputBlock
     public $depth;
 
     /**
-     * @var array|null
+     * @var array
      */
     public $selectors;
 
     /**
-     * @var string[]
+     * @var array
      */
     public $lines;
 
     /**
-     * @var OutputBlock[]
+     * @var array
      */
     public $children;
 
     /**
-     * @var OutputBlock|null
+     * @var \Leafo\ScssPhp\Formatter\OutputBlock
      */
     public $parent;
 
     /**
-     * @var string|null
+     * @var string
      */
     public $sourceName;
 
     /**
-     * @var integer|null
+     * @var integer
      */
     public $sourceLine;
 
     /**
-     * @var integer|null
+     * @var integer
      */
     public $sourceColumn;
 }

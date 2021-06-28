@@ -1,33 +1,30 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\Compiler;
+namespace Leafo\ScssPhp\Compiler;
 
 /**
  * Compiler environment
  *
  * @author Anthon Pang <anthon.pang@gmail.com>
- *
- * @internal
  */
 class Environment
 {
     /**
-     * @var \ScssPhp\ScssPhp\Block|null
+     * @var \Leafo\ScssPhp\Block
      */
     public $block;
 
     /**
-     * @var \ScssPhp\ScssPhp\Compiler\Environment|null
+     * @var \Leafo\ScssPhp\Compiler\Environment
      */
     public $parent;
 
@@ -35,11 +32,6 @@ class Environment
      * @var array
      */
     public $store;
-
-    /**
-     * @var array
-     */
-    public $storeUnreduced;
 
     /**
      * @var integer

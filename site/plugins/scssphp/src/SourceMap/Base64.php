@@ -1,30 +1,27 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2015 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp\SourceMap;
+namespace Leafo\ScssPhp\SourceMap;
 
 /**
  * Base 64 Encode/Decode
  *
  * @author Anthon Pang <anthon.pang@gmail.com>
- *
- * @internal
  */
 class Base64
 {
     /**
-     * @var array<int, string>
+     * @var array
      */
-    private static $encodingMap = [
+    private static $encodingMap = array (
         0 => 'A',
         1 => 'B',
         2 => 'C',
@@ -89,12 +86,12 @@ class Base64
         61 => '9',
         62 => '+',
         63 => '/',
-    ];
+    );
 
     /**
-     * @var array<string|int, int>
+     * @var array
      */
-    private static $decodingMap = [
+    private static $decodingMap = array(
         'A' => 0,
         'B' => 1,
         'C' => 2,
@@ -159,7 +156,7 @@ class Base64
         9 => 61,
         '+' => 62,
         '/' => 63,
-    ];
+    );
 
     /**
      * Convert to base64

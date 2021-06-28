@@ -1,16 +1,15 @@
 <?php
-
 /**
  * SCSSPHP
  *
- * @copyright 2012-2020 Leaf Corcoran
+ * @copyright 2012-2018 Leaf Corcoran
  *
  * @license http://opensource.org/licenses/MIT MIT
  *
- * @link http://scssphp.github.io/scssphp
+ * @link http://leafo.github.io/scssphp
  */
 
-namespace ScssPhp\ScssPhp;
+namespace Leafo\ScssPhp;
 
 /**
  * SCSSPHP version
@@ -19,5 +18,5 @@ namespace ScssPhp\ScssPhp;
  */
 class Version
 {
-    const VERSION = '1.5.2';
+    const VERSION = 'v0.7.8';
 }

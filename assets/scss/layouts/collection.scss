@@ -32,7 +32,7 @@
 
 	.collection--grid & {
 		@media screen and (min-width: #{$viewport-narrow-min-width}) {
-			grid-template-columns: repeat(auto-fill, minmax(var(--type-area-width-condensed), 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(var(--type-area-width-condensed), 1fr));
 		}
 	}
 

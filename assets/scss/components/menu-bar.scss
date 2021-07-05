@@ -32,7 +32,7 @@ $menu-bar-z-index: 0 !default;
 		transform: rotate(-3deg);
 	}
 	&--active {
-		border: 3px dotted rgb(224, 195, 194);
+		border-bottom: 3px dotted var(--color-blue-high);
 	}
 	&:focus {
 		background-color: var(--color-focus);

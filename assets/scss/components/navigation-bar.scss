@@ -119,6 +119,10 @@ $navigation-bar-z-index: 0 !default;
 	display: block;
 	position: relative;
 
+	svg circle {
+		stroke: var(--color-blue-high);
+	}
+
 
 	&:focus {
 		outline: transparent;

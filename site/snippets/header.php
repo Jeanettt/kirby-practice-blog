@@ -4,7 +4,6 @@
     <title><?= $page->title() ?> - <?= $site->title(); ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php snippet('scss') ?>
     <?= css('assets/css/default.css') ?>
     <link rel="preload" href="/assets/fonts/lemurika.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
@@ -22,10 +21,12 @@
 
                 </div>
                 <div class="navigation-bar__center">
-                    <svg height="100" width="100">
-                        <circle cx="50" cy="50" r="40" stroke="hsl(2, 33%, 82%)" stroke-width="3" fill="transparent" />
-                        <text x="50%" y="40px" fill="hsl(2, 33%, 60%)" text-anchor="middle" transform="rotate(30 20,40)"><?= $page->title() ?></text>
-                    </svg>
+                    <div class="navigation-bar__logo">
+                        <svg height="100" width="100">
+                            <circle cx="50" cy="50" r="40" stroke="#000" stroke-width="3" fill="transparent" />
+                            <text x="50%" y="40px" fill="hsl(2, 33%, 60%)" text-anchor="middle" transform="rotate(30 20,40)"><?= $page->title() ?></text>
+                        </svg>
+                    </div>
                 </div>
                 <div class="navigation-bar__right">
 

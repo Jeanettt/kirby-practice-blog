@@ -3,8 +3,8 @@
  * 22 |     @media screen and (max-width: #{$viewport-narrow-max-width}) {
  *    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   ../lebkov-kirby/assets/scss/layouts/blockquote-layout.scss 22:34  @import
- *   ../lebkov-kirby/assets/scss/layouts/index.scss 3:9                root stylesheet */
+ *   ../kirby-practice-blog/assets/scss/layouts/blockquote-layout.scss 22:34  @import
+ *   ../kirby-practice-blog/assets/scss/layouts/index.scss 3:9                root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502      @media screen and (max-width: #{$viewport-narrow-max-width}) {\a    \2502                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ../lebkov-kirby/assets/scss/layouts/blockquote-layout.scss 22:34  @import\a   ../lebkov-kirby/assets/scss/layouts/index.scss 3:9                root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 22 \2502      @media screen and (max-width: #{$viewport-narrow-max-width}) {\a    \2502                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ../kirby-practice-blog/assets/scss/layouts/blockquote-layout.scss 22:34  @import\a   ../kirby-practice-blog/assets/scss/layouts/index.scss 3:9                root stylesheet";
 }

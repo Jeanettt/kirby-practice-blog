@@ -38,6 +38,6 @@ columns:
             type: users
           tags:
             type: tags
-          images:
-            type: files
-            layout: cards
+      images:
+        type: files
+        layout: cards

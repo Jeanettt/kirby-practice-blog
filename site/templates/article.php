@@ -8,7 +8,7 @@
         </div>
         <div class="collection collection--grid">
             <div class="collection__items">
-                <?php foreach($page->images() as $image): ?>
+                <?php foreach($page->images()->sortBy('sort') as $image): ?>
                 <img class="collection__item" 
                     src="<?= $image->url() ?>"
                     srcset="<?= $image->srcset() ?>"

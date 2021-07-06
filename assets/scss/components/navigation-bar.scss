@@ -122,7 +122,11 @@ $navigation-bar-z-index: 0 !default;
 	svg circle {
 		stroke: var(--color-blue-high);
 	}
-
+	svg text {
+		fill: var(--color-blue-high);
+		font-family: var(--font-family-lunchbox);
+		font-size: 50px;
+	}
 
 	&:focus {
 		outline: transparent;

@@ -4,8 +4,8 @@
     <title><?= $page->title() ?> - <?= $site->title(); ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php snippet('head/preload') ?>
     <?= css('assets/css/default.css') ?>
-    <link rel="preload" href="/assets/fonts/lemurika.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page">

@@ -22,3 +22,4 @@ columns:
         extends: sections/articles
         headline: Published
         status: listed
+        image: page.images.findBy("sort", "1")

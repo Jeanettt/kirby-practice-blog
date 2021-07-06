@@ -1,6 +1,6 @@
 :root {
     --font-family-lunchbox: 'Lemurika', 'Arial Narrow', 'system-ui', sans-serif;
-    --font-family-space-mono: 'Space Mono', 'Courier', 'system-ui', sans-serif;
+    --font-family-mulish: 'Mulish', 'Arial', 'system-ui', sans-serif;
 
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -76,8 +76,8 @@
     --font-h2: normal normal var(--font-weight-bold) var(--font-size-xx-large) / var(--line-height-x-small) var(--font-family-lunchbox);
 	--font-h3: normal normal var(--font-weight-bold) var(--font-size-x-large) / var(--line-height-small) var(--font-family-lunchbox);
 	--font-h4: normal normal var(--font-weight-bold) var(--font-size-large) / var(--line-height-small) var(--font-family-lunchbox);
-	--font-h5: normal normal var(--font-weight-bold) var(--font-size-medium) / var(--line-height-medium) var(--font-family-space-mono);
-	--font-h6: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-space-mono);
-    --font-base: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-space-mono);
-	--font-small: normal normal var(--font-weight-normal) var(--font-size-small) / var(--line-height-medium) var(--font-family-space-mono);
+	--font-h5: normal normal var(--font-weight-bold) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+	--font-h6: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+    --font-base: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+	--font-small: normal normal var(--font-weight-normal) var(--font-size-small) / var(--line-height-medium) var(--font-family-mulish);
 }

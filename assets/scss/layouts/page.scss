@@ -10,9 +10,6 @@ $page-z-index: 0 !default;
     font: var(--font-base);
     overflow-x: hidden; // NOTE: Otherwise slider will produce hortizontal scroll bars
     overflow-y: visible;
-    background-image: url(../images/paper-seamless.jpg);
-	background-size: 400px auto;
-	background-color: var(--color-base-low);
 
 	// @media (prefers-color-scheme: dark) {
 	// 	background-image: url(../images/paper-dark.jpg);

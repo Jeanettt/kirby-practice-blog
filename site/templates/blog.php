@@ -1,30 +1,24 @@
 <?php snippet('header') ?>
 
-<section class="simple-layout simple-layout--box">
+<section class="simple-layout">
     <div class="simple-layout__body">
         <div class="simple-layout__main">
             <h1><?= $page->title()->html() ?></h1>
-            <?= $page->text()->kirbytext() ?>
             <section class="collection collection--grid">
                 <div class="collection__items">
                     <?php
-                        $articles = $page->children()->listed()->flip()->paginate(4); 
+                        $articles = $page->children()->listed()->flip()->paginate(3); 
                         foreach($articles as $article): ?>
                     <article class="collection__item">
-                        <a class="card card--square-media
-                                <?php if (($articles->indexOf($article) % 4) == 0): ?>
-                                    card--blue
-                                <?php elseif ($articles->indexOf($article) == 1 or ($articles->indexOf($article) % 5) == 0): ?>
-                                    card--green
-                                <?php elseif ($articles->indexOf($article) == 2 or ($articles->indexOf($article) % 6) == 0): ?>
-                                    card--orange
-                                <?php elseif ($articles->indexOf($article) == 3 or ($articles->indexOf($article) % 7) == 0): ?>
-                                    card--magenta
-                                <?php endif; ?>
-                            "
+                        <a class="card"
                             href="<?= $article->url() ?>"
                         >
                             <div class="card__areas">
+                                <div class="card__text-area">
+                                    <h3 class="card__title">
+                                        <?= $article->title()->html() ?>
+                                    </h3>
+                                </div>
                                 <?php if($image = $article->content()->images()->first()->toFile()): ?>
                                 <div class="card__media-area">
                                     <img class="card__image"
@@ -50,18 +44,8 @@
                                     >
                                 </div>
                                 <?php endif; ?>
-                                <div class="card__text-area">
-                                    <h3 class="card__title">
-                                        <?= $article->title()->html() ?>
-                                    </h3>
-                                    <?php if ($article->intro()->isNotEmpty()): ?>
-                                        <p class="card__subtitle">
-                                            <?= $article->intro()->kirbytext() ?>
-                                        </p>
-                                    <?php endif; ?>
-                                </div>
                                 <div class="card__action-area">
-                                    <div class="button button--elevated">
+                                    <div class="card__read-more">
                                         Read more...
                                     </div>
                                 </div>
@@ -69,24 +53,30 @@
                         </a>
                     </article>
                     <?php endforeach ?>
-                    <?php if ($articles->pagination()->hasPages()): ?>
-                    <nav class="pagination">
-
-                    <?php if ($articles->pagination()->hasPrevPage()): ?>
-                    <a class="next" href="<?= $articles->pagination()->prevPageURL() ?>">
-                        ‹ older posts
-                    </a>
-                    <?php endif ?>
-
-                    <?php if ($articles->pagination()->hasNextPage()): ?>
-                    <a class="prev" href="<?= $articles->pagination()->nextPageURL() ?>">
-                        newer posts ›
-                    </a>
-                    <?php endif ?>
-
-                    </nav>
-                    <?php endif ?>
                 </div>
+            </section>
+            <section class="full-bleed-layout">
+                <?php if ($articles->pagination()->hasPages()): ?>
+                <nav class="pagination">
+                    
+                    <?php if ($articles->pagination()->hasPrevPage()): ?>
+                    <a class="pagination__link pagination__link--prev" 
+                    href="<?= $articles->pagination()->prevPageURL() ?>"
+                    >
+                        ‹ newer posts
+                    </a>
+                    <?php endif ?>
+                    
+                    <?php if ($articles->pagination()->hasNextPage()): ?>
+                    <a class="pagination__link pagination__link--next" 
+                        href="<?= $articles->pagination()->nextPageURL() ?>"
+                    >
+                        older posts ›
+                    </a>
+                    <?php endif ?>
+
+                </nav>
+                <?php endif ?>
             </section>
         </div>
     </div>

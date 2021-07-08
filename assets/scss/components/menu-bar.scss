@@ -20,7 +20,7 @@ $menu-bar-z-index: 0 !default;
 .menu-bar__item {
 
 	font-family: var(--font-family-neue-droschke);
-	font-size: 30px;
+	font-size: 22px;
 	line-height: 1;
 	font-weight: bold;
 	white-space: nowrap;
@@ -30,9 +30,6 @@ $menu-bar-z-index: 0 !default;
 
 	&:hover {
 		transform: rotate(-3deg);
-	}
-	&--active {
-		border-bottom: 3px dotted var(--color-blue-high);
 	}
 	&:focus {
 		background-color: var(--color-focus);

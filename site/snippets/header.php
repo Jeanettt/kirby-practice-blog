@@ -17,15 +17,15 @@
         </a>
         <nav class="navigation-bar">
             <div class="navigation-bar__body">
-                <div class="navigation-bar__left">
+                <div class="navigation-bar__left-area">
 
                 </div>
-                <div class="navigation-bar__center">
+                <div class="navigation-bar__center-area">
                     <div class="navigation-bar__logo">
                         <?= @svg('assets/images/sun-logo.svg') ?>
                     </div>
                 </div>
-                <div class="navigation-bar__right">
+                <div class="navigation-bar__right-area">
 
                 </div>
             </div>

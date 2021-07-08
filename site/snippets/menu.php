@@ -12,7 +12,7 @@ if($items->isNotEmpty()):
 >
   <div class="menu-bar__items">
     <?php foreach ($items as $item) : ?>
-    <a class="menu-bar__item <?php e($item->isOpen(), 'menu-bar__item--active') ?>"
+    <a class="menu-bar__item"
       href="<?= $item->url() ?>"
     >
       <?= $item->title()->html() ?>

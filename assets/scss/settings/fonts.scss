@@ -53,10 +53,10 @@
 	@media screen and (min-width: #{$viewport-regular-min-width}) {
 		--font-size-small: 14px;
 		--font-size-medium: 16px;
-		--font-size-large: 24px;
-		--font-size-x-large: 36px;
-		--font-size-xx-large: 54px;
-		--font-size-xxx-large: 81px;
+		--font-size-large: 20px;
+		--font-size-x-large: 24px;
+		--font-size-xx-large: 28px;
+		--font-size-xxx-large: 36px;
 		// --font-size-large: clamp(20px, 16.7px + 1.04vw, 24px);
 		// --font-size-x-large: clamp(25px, 15.8px + 2.86vw, 36px);
 		// --font-size-xx-large: clamp(31px, 11.93px + 6vw, 54px);

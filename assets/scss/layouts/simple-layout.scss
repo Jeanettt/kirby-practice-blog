@@ -14,58 +14,6 @@
 	background-color: var(--color-base-dark-mode-root);
 }
 
-.simple-layout--box {
-	margin: 0;
-	padding: var(--spacing-level-1) var(--spacing-column-level-1);
-
-	&::before {
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: var(--color-base-low);
-		content: '';
-		-webkit-clip-path: polygon(0 0, 100% calc(var(--spacing-level-1) * 0.5), 100% 100%, 0 calc(100% - var(--spacing-level-1) * 0.5));
-		clip-path: polygon(0 0, 100% calc(var(--spacing-level-1) * 0.5), 100% 100%, 0 calc(100% - var(--spacing-level-1) * 0.5));
-	}
-
-	&:first-child {
-		margin-top: 0;
-	}
-
-	&.simple-layout--red {
-		&::before {
-			background-color: var(--color-red-low);
-		}
-	}
-
-	&.simple-layout--orange {
-		&::before {
-			background-color: var(--color-orange-low);
-		}
-	}
-
-	&.simple-layout--green {
-		&::before {
-			background-color: var(--color-green-low);
-		}
-	}
-
-	&.simple-layout--blue {
-		&::before {
-			background-color: var(--color-blue-low);
-		}
-	}
-
-	&.simple-layout--magenta {
-		&::before {
-			background-color: var(--color-magenta-low);
-		}
-	}
-}
-
 .simple-layout__body {
 	display: grid;
 	grid-gap: var(--spacing-level-2);

@@ -1,5 +1,6 @@
-$navigation-bar-logo-width-small: 80px !default;
-$navigation-bar-logo-width-large: 96px !default;
+$navigation-bar-logo-width-small: 96px !default;
+$navigation-bar-logo-width-medium: 104px !default;
+$navigation-bar-logo-width-large: 122px !default;
 $navigation-bar-z-index: 0 !default;
 
 .navigation-bar {
@@ -119,13 +120,8 @@ $navigation-bar-z-index: 0 !default;
 	display: block;
 	position: relative;
 
-	svg circle {
-		stroke: var(--color-blue-high);
-	}
-	svg text {
-		fill: var(--color-blue-high);
-		font-family: var(--font-family-neue-droschke);
-		font-size: 50px;
+	svg {
+		width: 100%;
 	}
 
 	&:focus {

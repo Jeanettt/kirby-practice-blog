@@ -44,4 +44,9 @@
         </article>
         <?php endforeach ?>
     </div>
+    <div class="collection__pagination">
+        <?php snippet('pagination', [
+            'pagination' => $articles->pagination()
+        ]) ?>
+    </div>
 </section>

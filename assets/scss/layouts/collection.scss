@@ -20,7 +20,6 @@
 .collection__items {
 	display: flex;
 	flex-wrap: wrap;
-	// width: auto;
 	gap: var(--spacing-level-4);
 	justify-content: center;
 	.collection--compact & {
@@ -87,4 +86,9 @@
 	.collection--compact & {
 		bottom: calc(var(--spacing-level-4) * -1);
 	}
+}
+
+.collection__pagination {
+	width: 50%;
+	margin: 30px auto;
 }

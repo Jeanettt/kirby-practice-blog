@@ -21,15 +21,21 @@
 .simple-layout__body {
 	display: grid;
 	grid-gap: var(--spacing-level-2);
-
-	.simple-layout--max-extended-width & {
-		max-width: var(--type-area-width-extended);
+	
+	.simple-layout--max-narrow-width & {
+		max-width: var(--type-area-width-narrow);
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
-	.simple-layout--max-narrow-width & {
-		max-width: var(--type-area-width-narrow);
+	.simple-layout--max-regular-width & {
+		max-width: var(--type-area-width-regular);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.simple-layout--max-extended-width & {
+		max-width: var(--type-area-width-extended);
 		margin-left: auto;
 		margin-right: auto;
 	}

@@ -1,4 +1,4 @@
-<section class="collection collection--grid">
+<section class="collection">
     <div class="collection__items">
         <?php foreach($articles as $article): ?>
         <article class="collection__item">
@@ -10,7 +10,7 @@
                 <div class="card__areas">
                     <div class="card__text-area">
                         <h3 class="card__title">
-                            <?= $article->title()->html() ?>
+                            <?= Str::short($article->title()->html(), 32, '...') ?>
                         </h3>
                     </div>
                     <?php if($image = $article->content()->images()->first()->toFile()): ?>
@@ -38,7 +38,7 @@
                         >
                     </div>
                     <?php endif; ?>
-                    <div class="card__action-area">
+                    <div class="card__chevron">
                         <?= @svg('assets/images/icons/chevron-right.svg') ?>
                     </div>
                 </div>

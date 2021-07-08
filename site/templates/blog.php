@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<section class="simple-layout simple-layout--centered-text">
+<section class="simple-layout simple-layout--centered-text simple-layout--max-regular-width">
     <div class="simple-layout__body">
         <header class="simple-layout__header">
             <div class="heading-group">

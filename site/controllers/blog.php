@@ -1,7 +1,7 @@
 <?php
 
 return function ($page) {
-    $articles = collection('blog-collection')->flip()->paginate(3);
+    $articles = collection('blog-collection')->flip()->paginate(6);
     $pagination = $articles->pagination();
 
     return [

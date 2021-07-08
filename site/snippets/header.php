@@ -22,10 +22,7 @@
                 </div>
                 <div class="navigation-bar__center">
                     <div class="navigation-bar__logo">
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" stroke="#000" stroke-width="3" fill="transparent" />
-                            <text x="50%" y="40px" fill="hsl(2, 33%, 60%)" text-anchor="middle" transform="rotate(30 20,40)"><?= $page->title() ?></text>
-                        </svg>
+                        <?= @svg('assets/images/sun-logo.svg') ?>
                     </div>
                 </div>
                 <div class="navigation-bar__right">

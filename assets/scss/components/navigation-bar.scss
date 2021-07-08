@@ -1,6 +1,6 @@
 $navigation-bar-logo-width-small: 96px !default;
 $navigation-bar-logo-width-medium: 104px !default;
-$navigation-bar-logo-width-large: 122px !default;
+$navigation-bar-logo-width-large: 136px !default;
 $navigation-bar-z-index: 0 !default;
 
 .navigation-bar {
@@ -73,7 +73,7 @@ $navigation-bar-z-index: 0 !default;
 	margin: calc(var(--spacing-level-5) * 0.5);
 
 	@media screen and (max-width: #{$viewport-narrow-max-width}) {
-		width: calc(50% - #{$navigation-bar-logo-width-small * 0.5} - var(--spacing-level-5));
+		width: calc(50% - #{$navigation-bar-logo-width-medium * 0.5} - var(--spacing-level-5));
 		min-width: 60px;
 	}
 
@@ -89,7 +89,7 @@ $navigation-bar-z-index: 0 !default;
 	flex-shrink: 0;
 
 	@media screen and (max-width: #{$viewport-narrow-max-width}) {
-		width: $navigation-bar-logo-width-small;
+		width: $navigation-bar-logo-width-medium;
 	}
 
 	@media screen and (min-width: #{$viewport-regular-min-width}) {
@@ -106,7 +106,7 @@ $navigation-bar-z-index: 0 !default;
 
 
 	@media screen and (max-width: #{$viewport-narrow-max-width}) {
-		width: calc(50% - #{$navigation-bar-logo-width-small * 0.5} - var(--spacing-level-5));
+		width: calc(50% - #{$navigation-bar-logo-width-medium * 0.5} - var(--spacing-level-5));
 		min-width: 60px;
 	}
 

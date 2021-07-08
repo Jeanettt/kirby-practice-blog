@@ -16,4 +16,18 @@
         </div>
     </div>
 </section>
+<section class="simple-layout">
+    <div class="simple-layout__body">
+        <div class="simple-layout__header">
+            <h2>Laatste blogs</h2>
+        </div>
+        <div class="simple-layout__main">
+            <?php snippet('blog-collection', [
+                'articles' => collection('blog-collection')
+                    ->flip()
+                    ->limit(4)
+            ]) ?>
+        </div>
+    </div>
+</section>
 <?php snippet('footer') ?>

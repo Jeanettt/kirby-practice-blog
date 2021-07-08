@@ -18,10 +18,11 @@
 }
 
 .collection__items {
-	display: grid;
-	width: auto;
-	grid-gap: var(--spacing-level-3);
-
+	display: flex;
+	flex-wrap: wrap;
+	// width: auto;
+	gap: var(--spacing-level-4);
+	justify-content: center;
 	.collection--compact & {
 		grid-gap: var(--spacing-level-4);
 	}
@@ -70,21 +71,9 @@
 }
 
 .collection__item {
+	flex-basis: 0;
 	display: grid;
 	position: relative;
-
-	.collection--horizontal-scroll & {
-		scroll-snap-align: start;
-		margin-left: var(--spacing-level-3);
-		margin-right: 0;
-		max-width: $type-area-width-condensed;
-		width: calc(90% - var(--spacing-level-3));
-		flex-shrink: 0;
-
-		&:first-child {
-			margin-left: var(--spacing-column-level-1);
-		}
-	}
 }
 
 .collection__item-separator {

@@ -2,7 +2,9 @@
     <div class="collection__items">
         <?php foreach($articles as $article): ?>
         <article class="collection__item">
-            <a class="card"
+            <a class="card 
+                <?php e($article->image(), 'card--image') ?>
+            "
                 href="<?= $article->url() ?>"
             >
                 <div class="card__areas">

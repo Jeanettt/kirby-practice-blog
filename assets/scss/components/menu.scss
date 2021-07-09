@@ -1,9 +1,5 @@
 .menu {
-	color: var(--color-text-high-contrast);
-}
-
-.menu--dark-mode {
-	color: var(--color-text-dark-mode-high-contrast);
+	color: var(--color-text);
 }
 
 .menu__items {
@@ -34,17 +30,4 @@
 
 a.menu__item {
 	text-decoration: underline;
-
-	&:focus {
-		outline: transparent;
-		box-shadow: 0 0 0 3px var(--color-focus);
-	}
-
-	&:focus:not(:focus-visible) {
-		box-shadow: none;
-	}
-
-	&::-moz-focus-inner {
-		border: 0;
-	}
 }

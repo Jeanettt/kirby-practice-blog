@@ -31,11 +31,6 @@ $menu-bar-z-index: 0 !default;
 	&:hover {
 		transform: rotate(-3deg);
 	}
-	&:focus {
-		background-color: var(--color-focus);
-		color: var(--color-text-dark-mode-high-contrast);
-		outline: transparent;
-	}
 
 	&:focus:not(:focus-visible) {
 		background-color: transparent;

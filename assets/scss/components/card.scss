@@ -12,7 +12,7 @@ $card-border-radius: 15px !default;
 	flex-direction: column;
 
 	&:not(.card--image) {
-	border: 2px solid #20202c;
+	border: 2px solid var(--color-text);
 	}
 }
 
@@ -22,7 +22,7 @@ $card-border-radius: 15px !default;
 		z-index: -1;
 		border-radius: $card-border-radius;
 		content: '';
-		background-color: #20202c;
+		background-color: var(--color-black);
 		opacity: 0.6;
 		position: absolute;
 		inset: 0;
@@ -45,7 +45,7 @@ $card-border-radius: 15px !default;
 	line-height: var(--line-height-x-small);
 
 	.card--image & {
-		color: #fcfcf4;
+		color: var(--color-cream);
 	}
 }
 
@@ -66,8 +66,11 @@ $card-border-radius: 15px !default;
 	bottom: 10%;
 	right: 10%;
 
+	& svg path {
+		stroke: var(--color-text);
+	}
 	.card--image & svg path {
-		stroke: #fcfcf4;
+		stroke: var(--color-cream);
 	}
 
 	.card:hover & {

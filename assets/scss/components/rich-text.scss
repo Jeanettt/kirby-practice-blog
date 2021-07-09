@@ -42,14 +42,6 @@
 			hyphenate-limit-zone: 8%;
 }
 
-.rich-text--dark-mode {
-	color: var(--color-text-dark-mode);
-}
-
-.rich-text--light-mode {
-	color: var(--color-text-light-mode);
-}
-
 h1 {
 	.rich-text & {
 		margin: calc(var(--line-height-base) / 4) 0;
@@ -58,10 +50,6 @@ h1 {
 
 	.rich-text--small & {
 		font: var(--font-h2);
-	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
 	}
 }
 
@@ -74,10 +62,6 @@ h2 {
 	.rich-text--small & {
 		font: var(--font-h3);
 	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
-	}
 }
 
 h3 {
@@ -88,10 +72,6 @@ h3 {
 
 	.rich-text--small & {
 		font: var(--font-h4);
-	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
 	}
 }
 
@@ -104,10 +84,6 @@ h4 {
 	.rich-text--small & {
 		font: var(--font-h5);
 	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
-	}
 }
 
 h5 {
@@ -119,10 +95,6 @@ h5 {
 	.rich-text--small & {
 		font: var(--font-h6);
 	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
-	}
 }
 
 h6 {
@@ -133,10 +105,6 @@ h6 {
 
 	.rich-text--small & {
 		font: var(--font-base);
-	}
-
-	.rich-text--dark-mode & {
-		color: var(--color-text-dark-mode-high-contrast);
 	}
 }
 
@@ -216,20 +184,6 @@ li {
 a {
 	.rich-text & {
 		text-decoration: underline;
-
-		&:focus {
-			outline: transparent;
-			border-color: var(--color-focus);
-			box-shadow: 0 0 0 3px var(--color-focus);
-		}
-
-		&:focus:not(:focus-visible) {
-			box-shadow: none;
-		}
-
-		&::-moz-focus-inner {
-			border: 0;
-		}
 	}
 }
 

@@ -12,12 +12,6 @@
 	text-align: center;
 }
 
-.simple-layout--dark-mode {
-	margin: 0;
-	padding: var(--spacing-level-1) var(--spacing-column-level-1);
-	background-color: var(--color-base-dark-mode-root);
-}
-
 .simple-layout__body {
 	display: grid;
 	grid-gap: var(--spacing-level-2);

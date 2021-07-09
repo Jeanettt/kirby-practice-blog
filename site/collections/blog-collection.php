@@ -1,7 +1,7 @@
 <?php
 
 return function () {
-    return page('blog')
+    return page('blogs')
         ->children()
         ->listed();
 };

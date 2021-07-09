@@ -1,3 +1,0 @@
-Title: Blog
-----
-Text: Dit is mijn site om met Kirby te oefenen. Een blog leek mij een goed begin omdat het veel content bevat. Lalalalalala.

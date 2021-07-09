@@ -1,0 +1,19 @@
+.pagination {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination__link {
+    font: var(--font-h5);
+    text-decoration: underline;
+}
+
+.pagination__link--prev {
+    margin-right: auto;
+}
+.pagination__link--next {
+    margin-left: auto;
+}

@@ -1,0 +1,42 @@
+// Project colors
+
+$color-cream: hsl(60, 57%, 97%);
+$color-black: hsl(240, 16%, 15%);
+
+// Default and light mode colors
+
+@mixin colors-default {
+	--color-cream:			#{$color-cream};
+	--color-black:			#{$color-black};
+	--color-text:			#{$color-black};
+	--color-background:		#{$color-cream};
+}
+
+// Dark mode colors 
+
+@mixin colors-default-dark-mode{
+	--color-cream:			#{$color-cream};
+	--color-black:			#{$color-black};
+	--color-text:			#{$color-cream};
+	--color-background:		#{$color-black};
+}
+
+// Set default colors
+
+:root {
+	@include colors-default;
+}
+
+// Set light and dark mode colors
+
+@media (prefers-color-scheme: light) {
+	:root {
+		@include colors-default;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include colors-default-dark-mode;
+	}
+}

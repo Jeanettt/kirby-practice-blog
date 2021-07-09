@@ -1,0 +1,33 @@
+[type='color'],
+[type='email'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'],
+textarea,
+select {
+	border: 1px solid black;
+	border-radius: 0; // NOTE: Reset border radius (iOS) Safari
+	background-color: white;
+	box-shadow: none; // NOTE: Reset FF box shadow
+	color: inherit;
+	font-family: inherit;
+	font-size: 16px; // NOTE: Font size of 16px or higher disables zooming on form fields with iOS.
+	appearance: none;
+}
+
+::-ms-clear {
+	display: none; // NOTE: Remove the cross from input fields in IE
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	margin: 0; // NOTE: Apparently some margin are still there even though it's hidden
+	-webkit-appearance: none; // NOTE: Remove 'spinner' controls in numberic input fields on WebKit browsers. Used because 'display: none;' will crash Chrome on hover.
+}
+
+input[type='number'] {
+	-moz-appearance: textfield; // NOTE: Remove 'spinner' controls in numberic input fields on Mozzila browsers
+}

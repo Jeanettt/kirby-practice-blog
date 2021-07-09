@@ -1,0 +1,27 @@
+$button-z-index: 0 !default;
+
+.button {
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+	will-change: transform;
+	position: relative;
+	border: none;
+	min-height: var(--touch-size);
+	font-weight: var(--font-weight-bold);
+	font-family: var(--font-family-neue-droschke);
+	line-height: var(--line-height-x-small);
+	font-size: var(--font-size-large);
+	font-size: 20px;
+    color: var(--color-text);
+	padding-top: calc((var(--touch-size) - 20px * var(--line-height-x-small)) * 0.5);
+	padding-bottom: calc((var(--touch-size) - 20px * var(--line-height-x-small)) * 0.5);
+	padding-left: calc(var(--touch-size) * 0.5);
+	padding-right: calc(var(--touch-size) * 0.5);
+
+	&.is-disabled,
+	&:disabled {
+		opacity: var(--opacity-disabled);
+	}
+
+}

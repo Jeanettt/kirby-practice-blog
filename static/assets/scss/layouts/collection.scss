@@ -1,0 +1,15 @@
+.collection {
+	width: 100%;
+}
+
+.collection__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-level-4);
+	justify-content: center;
+}
+
+.collection__pagination {
+	width: 50%;
+	margin: 30px auto;
+}

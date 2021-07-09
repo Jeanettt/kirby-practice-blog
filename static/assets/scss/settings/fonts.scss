@@ -1,0 +1,83 @@
+:root {
+    --font-family-neue-droschke: 'Neue Droschke', 'Arial Narrow', 'system-ui', sans-serif;
+    --font-family-mulish: 'Mulish', 'Arial', 'system-ui', sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+	--line-height-x-small: 1.0;
+	--line-height-small: 1.2;
+	--line-height-medium: 1.5;
+	--line-height-large: 1.7;
+	--line-height-x-large: 2.0;
+
+	@media screen and (max-width: #{$viewport-compressed-max-width}) {
+		--font-size-small: 14px;
+		--font-size-medium: 16px;
+		--font-size-large: 20px;
+		--font-size-x-large: 25px;
+		--font-size-xx-large: 31px;
+		--font-size-xxx-large: 39px;
+		// --font-size-large: clamp(20px, 4vw, 24px);
+		// --font-size-x-large: clamp(25px, 5.66vw, 36px);
+		// --font-size-xx-large: clamp(31px, 8vw, 54px);
+		// --font-size-xxx-large: clamp(39px, 11.3vw, 81px);
+	}
+
+	@media screen and (min-width: #{$viewport-condensed-min-width}) and (max-width: #{$viewport-condensed-max-width}) {
+		--font-size-small: 14px;
+		--font-size-medium: 16px;
+		--font-size-large: 21px;
+		--font-size-x-large: 27px;
+		--font-size-xx-large: 34px;
+		--font-size-xxx-large: 45px;
+		// --font-size-large: clamp(20px, 4vw, 24px);
+		// --font-size-x-large: clamp(25px, 5.66vw, 36px);
+		// --font-size-xx-large: clamp(31px, 8vw, 54px);
+		// --font-size-xxx-large: clamp(39px, 11.3vw, 81px);
+	}
+
+	@media screen and (min-width: #{$viewport-narrow-min-width}) and (max-width: #{$viewport-narrow-max-width}) {
+		--font-size-small: 14px;
+		--font-size-medium: 16px;
+		--font-size-large: 23px;
+		--font-size-x-large: 32px;
+		--font-size-xx-large: 45px;
+		--font-size-xxx-large: 64px;
+		// --font-size-large: clamp(20px, 4vw, 24px);
+		// --font-size-x-large: clamp(25px, 5.66vw, 36px);
+		// --font-size-xx-large: clamp(31px, 8vw, 54px);
+		// --font-size-xxx-large: clamp(39px, 11.3vw, 81px);
+	}
+
+	@media screen and (min-width: #{$viewport-regular-min-width}) {
+		--font-size-small: 14px;
+		--font-size-medium: 16px;
+		--font-size-large: 20px;
+		--font-size-x-large: 24px;
+		--font-size-xx-large: 28px;
+		--font-size-xxx-large: 36px;
+		// --font-size-large: clamp(20px, 16.7px + 1.04vw, 24px);
+		// --font-size-x-large: clamp(25px, 15.8px + 2.86vw, 36px);
+		// --font-size-xx-large: clamp(31px, 11.93px + 6vw, 54px);
+		// --font-size-xxx-large: clamp(39px, 4px + 10.94vw, 81px);
+	}
+
+	@supports(font-size: clamp(1px, 1px, 1px)) {
+		--font-size-small: 14px;
+		--font-size-medium: 16px;
+		--font-size-large: clamp(20px, 4vw, 24px);
+		--font-size-x-large: clamp(25px, 5.66vw, 36px);
+		--font-size-xx-large: clamp(31px, 8vw, 54px);
+		--font-size-xxx-large: clamp(39px, 11.3vw, 81px);
+	}
+
+    --font-h1: normal normal var(--font-weight-bold) var(--font-size-xxx-large) / var(--line-height-x-small) var(--font-family-neue-droschke);
+    --font-h2: normal normal var(--font-weight-bold) var(--font-size-xx-large) / var(--line-height-x-small) var(--font-family-neue-droschke);
+	--font-h3: normal normal var(--font-weight-bold) var(--font-size-x-large) / var(--line-height-small) var(--font-family-neue-droschke);
+	--font-h4: normal normal var(--font-weight-bold) var(--font-size-large) / var(--line-height-small) var(--font-family-neue-droschke);
+	--font-h5: normal normal var(--font-weight-bold) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+	--font-h6: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+    --font-base: normal normal var(--font-weight-normal) var(--font-size-medium) / var(--line-height-medium) var(--font-family-mulish);
+	--font-small: normal normal var(--font-weight-normal) var(--font-size-small) / var(--line-height-medium) var(--font-family-mulish);
+}

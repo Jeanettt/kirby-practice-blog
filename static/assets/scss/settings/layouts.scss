@@ -1,0 +1,193 @@
+:root {
+    --spacing: 8px;
+    --touch-size: 44px;
+}
+
+
+$line-height-base: 26px !default; // ~ 17px * 1.5
+$ch: 10px !default;
+
+// Gap level 1 for 'root' o.a. page margins and between sections
+
+$spacing-level-1-compressed:			$line-height-base * 1.5 !default;
+$spacing-level-1-condensed:				$line-height-base * 2 !default;
+$spacing-level-1-narrow:				$line-height-base * 2 !default;
+$spacing-level-1-regular:				$line-height-base * 3 !default;
+$spacing-level-1-wide:					$line-height-base * 3 !default;
+$spacing-level-1-extended:				$line-height-base * 4 !default;
+$spacing-level-1-expanded:				$line-height-base * 5 !default;
+
+$spacing-column-level-1-compressed:		$line-height-base * 0.75 !default;
+$spacing-column-level-1-condensed:		$line-height-base * 1 !default;
+$spacing-column-level-1-narrow:			$line-height-base * 1.5 !default;
+$spacing-column-level-1-regular:		$line-height-base * 2 !default;
+$spacing-column-level-1-wide:			$spacing-level-1-wide;
+$spacing-column-level-1-extended:		$spacing-level-1-extended;
+$spacing-column-level-1-expanded:		$spacing-level-1-expanded;
+
+// Gap level 2 for 'sections' o.a. space between section areas
+
+$spacing-level-2-min:					$line-height-base * 1 !default;
+$spacing-level-2-compressed:			$line-height-base * 1 !default;
+$spacing-level-2-condensed:				$line-height-base * 1 !default;
+$spacing-level-2-narrow:				$line-height-base * 1 !default;
+$spacing-level-2-regular:				$line-height-base * 1.5 !default;
+$spacing-level-2-wide:					$line-height-base * 2 !default;
+$spacing-level-2-extended:				$line-height-base * 2 !default;
+$spacing-level-2-expanded:				$line-height-base * 2 !default;
+$spacing-level-2-max:					$line-height-base * 2 !default;
+
+// Gap level 3 for 'groups' o.a. space between components.
+
+$spacing-level-3-min:					$line-height-base * 1 !default;
+$spacing-level-3-compressed:			$line-height-base * 1 !default;
+$spacing-level-3-condensed:				$line-height-base * 1 !default;
+$spacing-level-3-narrow:				$line-height-base * 1 !default;
+$spacing-level-3-regular:				$line-height-base * 1.5 !default;
+$spacing-level-3-wide:					$line-height-base * 2 !default;
+$spacing-level-3-extended:				$line-height-base * 2 !default;
+$spacing-level-3-expanded:				$line-height-base * 2 !default;
+$spacing-level-3-max:					$line-height-base * 2 !default;
+
+// Gap level 4 for 'components' o.a. gaps and spaces between component elements and controls.
+
+$spacing-level-4-min:					$line-height-base * 1 !default;
+$spacing-level-4-compressed:			$line-height-base * 1 !default;
+$spacing-level-4-condensed:				$line-height-base * 1 !default;
+$spacing-level-4-narrow:				$line-height-base * 1 !default;
+$spacing-level-4-regular:				$line-height-base * 1 !default;
+$spacing-level-4-wide:					$line-height-base * 1 !default;
+$spacing-level-4-extended:				$line-height-base * 1 !default;
+$spacing-level-4-expanded:				$line-height-base * 1 !default;
+$spacing-level-4-max:					$line-height-base * 1 !default;
+
+// Gap level 5 for 'elements' o.a. gaps inside component elements and controls or compact spaces between component elements.
+
+$spacing-level-5-min:					$line-height-base * 1/2 !default;
+$spacing-level-5-compressed:			$line-height-base * 1/2 !default;
+$spacing-level-5-condensed:				$line-height-base * 1/2 !default;
+$spacing-level-5-narrow:				$line-height-base * 1/2 !default;
+$spacing-level-5-regular:				$line-height-base * 1/2 !default;
+$spacing-level-5-wide:					$line-height-base * 1/2 !default;
+$spacing-level-5-extended:				$line-height-base * 1/2 !default;
+$spacing-level-5-expanded:				$line-height-base * 1/2 !default;
+$spacing-level-5-max:					$line-height-base * 1/2 !default;
+
+// Gap level 6 for 'compact elements' o.a. compact gaps inside component elements and controls.
+
+$spacing-level-6-min:					$line-height-base * 1/4 !default;
+$spacing-level-6-compressed:			$line-height-base * 1/4 !default;
+$spacing-level-6-condensed:				$line-height-base * 1/4 !default;
+$spacing-level-6-narrow:				$line-height-base * 1/4 !default;
+$spacing-level-6-regular:				$line-height-base * 1/4 !default;
+$spacing-level-6-wide:					$line-height-base * 1/4 !default;
+$spacing-level-6-extended:				$line-height-base * 1/4 !default;
+$spacing-level-6-expanded:				$line-height-base * 1/4 !default;
+$spacing-level-6-max:					$line-height-base * 1/4 !default;
+
+$type-area-width-compressed:			12 * $ch !default;
+$type-area-width-condensed:				28 * $ch !default;
+$type-area-width-narrow:				44 * $ch !default;
+$type-area-width-regular:				$type-area-width-condensed * 2 + $spacing-level-2-regular; // @NOTE: e.g. 2 columns with 1 gutters or 1 column;
+$type-area-width-wide:					$type-area-width-condensed * 3 + $spacing-level-2-wide * 2; // @NOTE: e.g. 3 columns with 2 gutters;
+$type-area-width-extended:				$type-area-width-condensed * 4 + $spacing-level-2-extended * 3; // @NOTE: e.g. 4 columns with 3 gutters;
+$type-area-width-expanded:				$type-area-width-condensed * 6 + $spacing-level-2-expanded * 5; // @NOTE: e.g. 6 columns with 5 gutters;
+
+$viewport-min-width:					320px !default;
+$viewport-compressed-min-width:			$type-area-width-compressed		+ $spacing-column-level-1-compressed * 2 + 1px !default;
+$viewport-compressed-max-width:			$type-area-width-condensed		+ $spacing-column-level-1-condensed * 2  !default;
+$viewport-condensed-min-width:			$type-area-width-condensed		+ $spacing-column-level-1-condensed * 2 + 1px !default;
+$viewport-condensed-max-width:			$type-area-width-narrow			+ $spacing-column-level-1-narrow * 2  !default;
+$viewport-narrow-min-width:				$type-area-width-narrow			+ $spacing-column-level-1-narrow * 2 + 1px !default;
+$viewport-narrow-max-width:				$type-area-width-regular		+ $spacing-column-level-1-regular * 2  !default;
+$viewport-regular-min-width:			$type-area-width-regular		+ $spacing-column-level-1-regular * 2 + 1px !default;
+$viewport-regular-max-width:			$type-area-width-wide			+ $spacing-column-level-1-wide * 2  !default;
+$viewport-wide-min-width:				$type-area-width-wide			+ $spacing-column-level-1-wide * 2 + 1px !default;
+$viewport-wide-max-width:				$type-area-width-extended		+ $spacing-column-level-1-extended * 2  !default;
+$viewport-extended-min-width:			$type-area-width-extended		+ $spacing-column-level-1-extended * 2 + 1px !default;
+$viewport-extended-max-width:			$type-area-width-expanded		+ $spacing-column-level-1-expanded * 2 !default;
+$viewport-expanded-min-width:			$type-area-width-expanded		+ $spacing-column-level-1-expanded * 2 + 1px !default;
+
+:root {
+	--line-height-base: #{$line-height-base};
+	--type-area-width-compressed: #{$type-area-width-compressed};
+	--type-area-width-condensed: #{$type-area-width-condensed};
+	--type-area-width-narrow: #{$type-area-width-narrow};
+	--type-area-width-regular: #{$type-area-width-regular};
+	--type-area-width-wide: #{$type-area-width-wide};
+	--type-area-width-extended: #{$type-area-width-extended};
+	--type-area-width-expanded: #{$type-area-width-expanded};
+
+	@media screen and (max-width: #{$viewport-compressed-min-width - 1px}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-compressed};
+		--spacing-level-1: #{$spacing-level-1-compressed};
+		--spacing-level-2: #{$spacing-level-2-compressed};
+		--spacing-level-3: #{$spacing-level-3-compressed};
+		--spacing-level-4: #{$spacing-level-4-compressed};
+		--spacing-level-5: #{$spacing-level-5-compressed};
+		--spacing-level-6: #{$spacing-level-6-compressed};
+	}
+	@media screen and (min-width: #{$viewport-compressed-min-width}) and (max-width: #{$viewport-compressed-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-compressed};
+		--spacing-level-1: #{$spacing-level-1-compressed};
+		--spacing-level-2: #{$spacing-level-2-compressed};
+		--spacing-level-3: #{$spacing-level-3-compressed};
+		--spacing-level-4: #{$spacing-level-4-compressed};
+		--spacing-level-5: #{$spacing-level-5-compressed};
+		--spacing-level-6: #{$spacing-level-6-compressed};
+	}
+	@media screen and (min-width: #{$viewport-condensed-min-width}) and (max-width: #{$viewport-condensed-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-condensed};
+		--spacing-level-1: #{$spacing-level-1-condensed};
+		--spacing-level-2: #{$spacing-level-2-condensed};
+		--spacing-level-3: #{$spacing-level-3-condensed};
+		--spacing-level-4: #{$spacing-level-4-condensed};
+		--spacing-level-5: #{$spacing-level-5-condensed};
+		--spacing-level-6: #{$spacing-level-6-condensed};
+	}
+	@media screen and (min-width: #{$viewport-narrow-min-width}) and (max-width: #{$viewport-narrow-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-narrow};
+		--spacing-level-1: #{$spacing-level-1-narrow};
+		--spacing-level-2: #{$spacing-level-2-narrow};
+		--spacing-level-3: #{$spacing-level-3-narrow};
+		--spacing-level-4: #{$spacing-level-4-narrow};
+		--spacing-level-5: #{$spacing-level-5-narrow};
+		--spacing-level-6: #{$spacing-level-6-narrow};
+	}
+	@media screen and (min-width: #{$viewport-regular-min-width}) and (max-width: #{$viewport-regular-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-regular};
+		--spacing-level-1: #{$spacing-level-1-regular};
+		--spacing-level-2: #{$spacing-level-2-regular};
+		--spacing-level-3: #{$spacing-level-3-regular};
+		--spacing-level-4: #{$spacing-level-4-regular};
+		--spacing-level-5: #{$spacing-level-5-regular};
+		--spacing-level-6: #{$spacing-level-6-regular};
+	}
+	@media screen and (min-width: #{$viewport-wide-min-width}) and (max-width: #{$viewport-wide-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-wide};
+		--spacing-level-1: #{$spacing-level-1-wide};
+		--spacing-level-2: #{$spacing-level-2-wide};
+		--spacing-level-3: #{$spacing-level-3-wide};
+		--spacing-level-4: #{$spacing-level-4-wide};
+		--spacing-level-5: #{$spacing-level-5-wide};
+		--spacing-level-6: #{$spacing-level-6-wide};
+	}
+	@media screen and (min-width: #{$viewport-extended-min-width}) and (max-width: #{$viewport-extended-max-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-extended};
+		--spacing-level-1: #{$spacing-level-1-extended};
+		--spacing-level-2: #{$spacing-level-2-extended};
+		--spacing-level-3: #{$spacing-level-3-extended};
+		--spacing-level-4: #{$spacing-level-4-extended};
+		--spacing-level-5: #{$spacing-level-5-extended};
+		--spacing-level-6: #{$spacing-level-6-extended};
+	}
+	@media screen and (min-width: #{$viewport-expanded-min-width}) {
+		--spacing-column-level-1: #{$spacing-column-level-1-expanded};
+		--spacing-level-1: #{$spacing-level-1-expanded};
+		--spacing-level-2: #{$spacing-level-2-expanded};
+		--spacing-level-3: #{$spacing-level-3-expanded};
+		--spacing-level-4: #{$spacing-level-4-expanded};
+		--spacing-level-5: #{$spacing-level-5-expanded};
+		--spacing-level-6: #{$spacing-level-6-expanded};
+	}
+}

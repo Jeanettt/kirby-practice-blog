@@ -1,6 +1,0 @@
-type: pages
-headline: Blogs
-info: "{{ page.date.toDate('d.m.Y') }}"
-template: blog
-empty: No articles yet
-sortBy: date desc

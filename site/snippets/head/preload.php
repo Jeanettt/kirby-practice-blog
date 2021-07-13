@@ -1,27 +1,27 @@
 <link 
     rel="preload" 
-    href="/assets/fonts/lemurika.woff2" 
+    href="./assets/fonts/lemurika.woff2" 
     as="font" 
     type="font/woff2" 
     crossorigin="anonymous"
 >
 <link
 	rel="preload"
-	href="/assets/fonts/mulish.woff2"
+	href="./assets/fonts/mulish.woff2"
 	as="font"
 	type="font/woff2"
 	crossorigin="anonymous"
 >
 <link
 	rel="preload"
-	href="/assets/fonts/mulish.ttf"
+	href="./assets/fonts/mulish.ttf"
 	as="font"
 	type="font/ttf"
 	crossorigin="anonymous"
 >
 <link
 	rel="preload"
-	href="/assets/fonts/mulish-italic.woff2"
+	href="./assets/fonts/mulish-italic.woff2"
 	as="font"
 	type="font/woff2"
 	crossorigin="anonymous"

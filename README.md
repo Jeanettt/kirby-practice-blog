@@ -2,7 +2,7 @@
 This is a project to practice with the Kirby CMS.
 
 ## View result
-To see the page I created visit https://jeanettt.github.io/kirby-practice-app
+To see the page I created visit https://jeanettt.github.io/kirby-practice-blog
 
 ## View source code
 The source code of this project is located at the source-code branch. 
